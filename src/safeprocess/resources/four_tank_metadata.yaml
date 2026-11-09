@@ -1,0 +1,776 @@
+version: 1
+status: engineering_source_transcription
+plant_id: sma-four-tank-plant
+evidence: DescriptionOfSmAFourTankBatchProcess_complete.pdf
+units_policy: Unspecified in column tables; do not infer units from numerical ranges
+discrepancies:
+- PI14013_PV_Out ValueY documented but absent from CSV
+- Flowchart L21003/L23003 tags differ from LIC21002/LIC23002 in P&ID and column tables;
+  map CSV using tables
+- PDF approximate 180 batches differs from 262 observed starts
+components:
+- name: sma-four-tank-plant
+  component_type: plant
+  description: Smart Automation four-tank plant
+  evidence: complete PDF pp.1–4
+- name: VE1000
+  component_type: tank
+  description: Reservoir vessel
+  evidence: complete PDF p.4, Figure 4
+  parent: sma-four-tank-plant
+- name: VE2100
+  component_type: tank
+  description: Batch vessel
+  evidence: complete PDF p.4, Figure 4
+  parent: sma-four-tank-plant
+- name: VE2200
+  component_type: tank
+  description: Batch vessel
+  evidence: complete PDF p.4, Figure 4
+  parent: sma-four-tank-plant
+- name: VE2300
+  component_type: tank
+  description: Batch vessel
+  evidence: complete PDF p.4, Figure 4
+  parent: sma-four-tank-plant
+- name: PL1100
+  component_type: pump
+  description: Parallel supply pump
+  evidence: complete PDF p.4, Figure 4
+  parent: sma-four-tank-plant
+- name: PL1200
+  component_type: pump
+  description: Parallel supply pump
+  evidence: complete PDF p.4, Figure 4
+  parent: sma-four-tank-plant
+- name: PL2150
+  component_type: pump
+  description: VE2100 leakage-path pump
+  evidence: complete PDF p.4, Figure 4
+  parent: sma-four-tank-plant
+- name: YC10001
+  component_type: valve
+  description: P&ID valve YC10001
+  evidence: complete PDF p.4, Figure 4
+  parent: sma-four-tank-plant
+- name: YC14001
+  component_type: valve
+  description: P&ID valve YC14001
+  evidence: complete PDF p.4, Figure 4
+  parent: sma-four-tank-plant
+- name: YC14006
+  component_type: valve
+  description: P&ID valve YC14006
+  evidence: complete PDF p.4, Figure 4
+  parent: sma-four-tank-plant
+- name: YC14008
+  component_type: valve
+  description: P&ID valve YC14008
+  evidence: complete PDF p.4, Figure 4
+  parent: sma-four-tank-plant
+- name: YC21001
+  component_type: valve
+  description: P&ID valve YC21001
+  evidence: complete PDF p.4, Figure 4
+  parent: sma-four-tank-plant
+- name: YC22001
+  component_type: valve
+  description: P&ID valve YC22001
+  evidence: complete PDF p.4, Figure 4
+  parent: sma-four-tank-plant
+- name: YC23001
+  component_type: valve
+  description: P&ID valve YC23001
+  evidence: complete PDF p.4, Figure 4
+  parent: sma-four-tank-plant
+- name: YC21006
+  component_type: valve
+  description: P&ID valve YC21006
+  evidence: complete PDF p.4, Figure 4
+  parent: sma-four-tank-plant
+- name: YC22006
+  component_type: valve
+  description: P&ID valve YC22006
+  evidence: complete PDF p.4, Figure 4
+  parent: sma-four-tank-plant
+- name: YC23006
+  component_type: valve
+  description: P&ID valve YC23006
+  evidence: complete PDF p.4, Figure 4
+  parent: sma-four-tank-plant
+- name: YS14004
+  component_type: valve
+  description: P&ID valve YS14004
+  evidence: complete PDF p.4, Figure 4
+  parent: sma-four-tank-plant
+- name: YS14005
+  component_type: valve
+  description: P&ID valve YS14005
+  evidence: complete PDF p.4, Figure 4
+  parent: sma-four-tank-plant
+- name: YS10004
+  component_type: valve
+  description: P&ID valve YS10004
+  evidence: complete PDF p.4, Figure 4
+  parent: sma-four-tank-plant
+- name: YS21004
+  component_type: valve
+  description: P&ID valve YS21004
+  evidence: complete PDF p.4, Figure 4
+  parent: sma-four-tank-plant
+- name: YS22004
+  component_type: valve
+  description: P&ID valve YS22004
+  evidence: complete PDF p.4, Figure 4
+  parent: sma-four-tank-plant
+- name: YS23004
+  component_type: valve
+  description: P&ID valve YS23004
+  evidence: complete PDF p.4, Figure 4
+  parent: sma-four-tank-plant
+- name: supply_header
+  component_type: pipe
+  description: Supply manifold to three vessel inlet branches
+  evidence: complete PDF p.4, Figure 4
+  parent: sma-four-tank-plant
+- name: bypass_return
+  component_type: pipe
+  description: Header bypass return to reservoir
+  evidence: complete PDF p.4, Figure 4
+  parent: sma-four-tank-plant
+- name: ambient
+  component_type: boundary
+  description: Ambient vent boundary
+  evidence: complete PDF p.4, Figure 4
+connections:
+- source: VE1000
+  target: YC10001
+  kind: physical
+  status: source_documented
+  evidence: complete PDF pp.1–4
+  description: Nominal operation direction from process description pp.1–2 and Figure
+    4
+- source: YC10001
+  target: PL1200
+  kind: physical
+  status: source_documented
+  evidence: complete PDF pp.1–4
+  description: Nominal operation direction from process description pp.1–2 and Figure
+    4
+- source: YC10001
+  target: PL1100
+  kind: physical
+  status: source_documented
+  evidence: complete PDF pp.1–4
+  description: Nominal operation direction from process description pp.1–2 and Figure
+    4
+- source: PL1200
+  target: YC14001
+  kind: physical
+  status: source_documented
+  evidence: complete PDF pp.1–4
+  description: Nominal operation direction from process description pp.1–2 and Figure
+    4
+- source: PL1100
+  target: YC14001
+  kind: physical
+  status: source_documented
+  evidence: complete PDF pp.1–4
+  description: Nominal operation direction from process description pp.1–2 and Figure
+    4
+- source: YC14001
+  target: supply_header
+  kind: physical
+  status: source_documented
+  evidence: complete PDF pp.1–4
+  description: Nominal operation direction from process description pp.1–2 and Figure
+    4
+- source: supply_header
+  target: YS14005
+  kind: physical
+  status: source_documented
+  evidence: complete PDF pp.1–4
+  description: Nominal operation direction from process description pp.1–2 and Figure
+    4
+- source: YS14005
+  target: VE1000
+  kind: physical
+  status: source_documented
+  evidence: complete PDF pp.1–4
+  description: Nominal operation direction from process description pp.1–2 and Figure
+    4
+- source: supply_header
+  target: YC14006
+  kind: physical
+  status: source_documented
+  evidence: complete PDF pp.1–4
+  description: Nominal operation direction from process description pp.1–2 and Figure
+    4
+- source: YC14006
+  target: bypass_return
+  kind: physical
+  status: source_documented
+  evidence: complete PDF pp.1–4
+  description: Nominal operation direction from process description pp.1–2 and Figure
+    4
+- source: bypass_return
+  target: YC14008
+  kind: physical
+  status: source_documented
+  evidence: complete PDF pp.1–4
+  description: Nominal operation direction from process description pp.1–2 and Figure
+    4
+- source: YC14008
+  target: VE1000
+  kind: physical
+  status: source_documented
+  evidence: complete PDF pp.1–4
+  description: Nominal operation direction from process description pp.1–2 and Figure
+    4
+- source: VE2100
+  target: PL2150
+  kind: physical
+  status: source_documented
+  evidence: complete PDF pp.1–4
+  description: Nominal operation direction from process description pp.1–2 and Figure
+    4
+- source: PL2150
+  target: YS14004
+  kind: physical
+  status: source_documented
+  evidence: complete PDF pp.1–4
+  description: Nominal operation direction from process description pp.1–2 and Figure
+    4
+- source: YS14004
+  target: VE1000
+  kind: physical
+  status: source_documented
+  evidence: complete PDF pp.1–4
+  description: Nominal operation direction from process description pp.1–2 and Figure
+    4
+- source: VE2300
+  target: YC23006
+  kind: physical
+  status: source_documented
+  evidence: complete PDF pp.1–4
+  description: Nominal operation direction from process description pp.1–2 and Figure
+    4
+- source: YC23006
+  target: VE1000
+  kind: physical
+  status: source_documented
+  evidence: complete PDF pp.1–4
+  description: Nominal operation direction from process description pp.1–2 and Figure
+    4
+- source: supply_header
+  target: YC21001
+  kind: physical
+  status: source_documented
+  evidence: complete PDF pp.1–4
+  description: Nominal operation direction from process description pp.1–2 and Figure
+    4
+- source: YC21001
+  target: VE2100
+  kind: physical
+  status: source_documented
+  evidence: complete PDF pp.1–4
+  description: Nominal operation direction from process description pp.1–2 and Figure
+    4
+- source: VE2100
+  target: YS21004
+  kind: vent
+  status: diagram_documented
+  evidence: complete PDF pp.1–4
+  description: Vessel-to-ambient vent connection; actual gas direction depends on
+    pressure
+- source: YS21004
+  target: ambient
+  kind: vent
+  status: diagram_documented
+  evidence: complete PDF pp.1–4
+  description: Vessel-to-ambient vent connection; actual gas direction depends on
+    pressure
+- source: supply_header
+  target: YC22001
+  kind: physical
+  status: source_documented
+  evidence: complete PDF pp.1–4
+  description: Nominal operation direction from process description pp.1–2 and Figure
+    4
+- source: YC22001
+  target: VE2200
+  kind: physical
+  status: source_documented
+  evidence: complete PDF pp.1–4
+  description: Nominal operation direction from process description pp.1–2 and Figure
+    4
+- source: VE2200
+  target: YS22004
+  kind: vent
+  status: diagram_documented
+  evidence: complete PDF pp.1–4
+  description: Vessel-to-ambient vent connection; actual gas direction depends on
+    pressure
+- source: YS22004
+  target: ambient
+  kind: vent
+  status: diagram_documented
+  evidence: complete PDF pp.1–4
+  description: Vessel-to-ambient vent connection; actual gas direction depends on
+    pressure
+- source: supply_header
+  target: YC23001
+  kind: physical
+  status: source_documented
+  evidence: complete PDF pp.1–4
+  description: Nominal operation direction from process description pp.1–2 and Figure
+    4
+- source: YC23001
+  target: VE2300
+  kind: physical
+  status: source_documented
+  evidence: complete PDF pp.1–4
+  description: Nominal operation direction from process description pp.1–2 and Figure
+    4
+- source: VE2300
+  target: YS23004
+  kind: vent
+  status: diagram_documented
+  evidence: complete PDF pp.1–4
+  description: Vessel-to-ambient vent connection; actual gas direction depends on
+    pressure
+- source: YS23004
+  target: ambient
+  kind: vent
+  status: diagram_documented
+  evidence: complete PDF pp.1–4
+  description: Vessel-to-ambient vent connection; actual gas direction depends on
+    pressure
+- source: VE2100
+  target: YC21006
+  kind: physical
+  status: inferred
+  evidence: complete PDF pp.1–4
+  description: Bidirectional hydraulic connection; direction depends on relative levels
+    and valve state
+- source: YC21006
+  target: VE2200
+  kind: physical
+  status: inferred
+  evidence: complete PDF pp.1–4
+  description: Bidirectional hydraulic connection; direction depends on relative levels
+    and valve state
+- source: VE2200
+  target: YC21006
+  kind: physical
+  status: inferred
+  evidence: complete PDF pp.1–4
+  description: Bidirectional hydraulic connection; direction depends on relative levels
+    and valve state
+- source: YC21006
+  target: VE2100
+  kind: physical
+  status: inferred
+  evidence: complete PDF pp.1–4
+  description: Bidirectional hydraulic connection; direction depends on relative levels
+    and valve state
+- source: VE2200
+  target: YC22006
+  kind: physical
+  status: inferred
+  evidence: complete PDF pp.1–4
+  description: Bidirectional hydraulic connection; direction depends on relative levels
+    and valve state
+- source: YC22006
+  target: VE2300
+  kind: physical
+  status: inferred
+  evidence: complete PDF pp.1–4
+  description: Bidirectional hydraulic connection; direction depends on relative levels
+    and valve state
+- source: VE2300
+  target: YC22006
+  kind: physical
+  status: inferred
+  evidence: complete PDF pp.1–4
+  description: Bidirectional hydraulic connection; direction depends on relative levels
+    and valve state
+- source: YC22006
+  target: VE2200
+  kind: physical
+  status: inferred
+  evidence: complete PDF pp.1–4
+  description: Bidirectional hydraulic connection; direction depends on relative levels
+    and valve state
+- source: VE1000
+  target: YS10004
+  kind: vent
+  status: diagram_documented
+  evidence: complete PDF pp.1–4
+  description: Reservoir vent connection
+- source: YS10004
+  target: ambient
+  kind: vent
+  status: diagram_documented
+  evidence: complete PDF pp.1–4
+  description: Reservoir vent connection
+channels:
+- name: timestamp
+  role: time
+  component: supply_header
+  observable_property: time
+  description: Historian timestamp; timezone not supplied
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: DeviationID ValueY
+  role: annotation
+  component: supply_header
+  observable_property: deviation_id
+  description: 1 normal; 2..10 introduced faults; 0 undocumented
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: CuStepNo ValueY
+  role: control_state
+  component: supply_header
+  observable_property: phase
+  description: SFC step; active cycle 1,7,8,3; 2 transient
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: LevelMainTank ValueY
+  role: sensor
+  component: VE1000
+  observable_property: level
+  description: Reservoir level, instrument L10002
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: PI12002_PV_Out ValueY
+  role: sensor
+  component: PL1200
+  observable_property: pressure
+  description: Pump inlet pressure
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: PI12003_PV_Out ValueY
+  role: sensor
+  component: PL1200
+  observable_property: pressure
+  description: Pump outlet pressure
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: PI14012_PV_Out ValueY
+  role: sensor
+  component: YC14006
+  observable_property: pressure
+  description: Pressure before YC14006
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: PI10003_PV_Out ValueY
+  role: sensor
+  component: VE1000
+  observable_property: pressure
+  description: Reservoir pressure
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: YC10001_MV ValueY
+  role: actuator
+  component: YC10001
+  observable_property: valve_command
+  description: Control valve command
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: YC14001_MV ValueY
+  role: actuator
+  component: YC14001
+  observable_property: valve_command
+  description: Control valve command
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: YC14006_MV ValueY
+  role: actuator
+  component: YC14006
+  observable_property: valve_command
+  description: Control valve command
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: YC23001_MV ValueY
+  role: actuator
+  component: YC23001
+  observable_property: valve_command
+  description: Control valve command
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: YC22001_MV ValueY
+  role: actuator
+  component: YC22001
+  observable_property: valve_command
+  description: Control valve command
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: YC21001_MV ValueY
+  role: actuator
+  component: YC21001
+  observable_property: valve_command
+  description: Control valve command
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: FIC14002_PV_Out ValueY
+  role: sensor
+  component: YC14001
+  observable_property: flow
+  description: Measured flow for FIC14002
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: FIC14002_MV ValueY
+  role: control_state
+  component: YC14001
+  observable_property: controller_output
+  description: Manipulated controller output; physical actuator binding only where
+    documented
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: FIC14002_SP ValueY
+  role: parameter
+  component: YC14001
+  observable_property: setpoint
+  description: Controller flow setpoint
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: FIC23002_PV_Out ValueY
+  role: sensor
+  component: YC23001
+  observable_property: flow
+  description: Measured flow for FIC23002
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: FIC23002_MV ValueY
+  role: control_state
+  component: YC23001
+  observable_property: controller_output
+  description: Manipulated controller output; physical actuator binding only where
+    documented
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: FIC23002_SP ValueY
+  role: parameter
+  component: YC23001
+  observable_property: setpoint
+  description: Controller flow setpoint
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: FIC22002_PV_Out ValueY
+  role: sensor
+  component: YC22001
+  observable_property: flow
+  description: Measured flow for FIC22002
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: FIC22002_MV ValueY
+  role: control_state
+  component: YC22001
+  observable_property: controller_output
+  description: Manipulated controller output; physical actuator binding only where
+    documented
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: FIC22002_SP ValueY
+  role: parameter
+  component: YC22001
+  observable_property: setpoint
+  description: Controller flow setpoint
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: FIC21002_PV_Out ValueY
+  role: sensor
+  component: YC21001
+  observable_property: flow
+  description: Measured flow for FIC21002
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: FIC21002_MV ValueY
+  role: control_state
+  component: YC21001
+  observable_property: controller_output
+  description: Manipulated controller output; physical actuator binding only where
+    documented
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: FIC21002_SP ValueY
+  role: parameter
+  component: YC21001
+  observable_property: setpoint
+  description: Controller flow setpoint
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: LIC23002_PV_Out ValueY
+  role: sensor
+  component: VE2300
+  observable_property: level
+  description: Measured level for LIC23002
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: LIC23002_MV ValueY
+  role: control_state
+  component: VE2300
+  observable_property: controller_output
+  description: Manipulated controller output; physical actuator binding only where
+    documented
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: LIC23002_SP ValueY
+  role: parameter
+  component: VE2300
+  observable_property: setpoint
+  description: Controller level setpoint
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: LIC22002_PV_Out ValueY
+  role: sensor
+  component: VE2200
+  observable_property: level
+  description: Measured level for LIC22002
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: LIC22002_MV ValueY
+  role: control_state
+  component: VE2200
+  observable_property: controller_output
+  description: Manipulated controller output; physical actuator binding only where
+    documented
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: LIC22002_SP ValueY
+  role: parameter
+  component: VE2200
+  observable_property: setpoint
+  description: Controller level setpoint
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: LIC21002_PV_Out ValueY
+  role: sensor
+  component: VE2100
+  observable_property: level
+  description: Measured level for LIC21002
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: LIC21002_MV ValueY
+  role: control_state
+  component: VE2100
+  observable_property: controller_output
+  description: Manipulated controller output; physical actuator binding only where
+    documented
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: LIC21002_SP ValueY
+  role: parameter
+  component: VE2100
+  observable_property: setpoint
+  description: Controller level setpoint
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: PIC14007_PV_Out ValueY
+  role: sensor
+  component: bypass_return
+  observable_property: pressure
+  description: Measured pressure for PIC14007
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: PIC14007_MV ValueY
+  role: control_state
+  component: bypass_return
+  observable_property: controller_output
+  description: Manipulated controller output; physical actuator binding only where
+    documented
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: PIC14007_SP ValueY
+  role: parameter
+  component: bypass_return
+  observable_property: setpoint
+  description: Controller pressure setpoint
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: YS23004_Ctrl ValueY
+  role: actuator
+  component: YS23004
+  observable_property: valve_command
+  description: Valve command
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: YS22004_Ctrl ValueY
+  role: actuator
+  component: YS22004
+  observable_property: valve_command
+  description: Valve command
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: YS21004_Ctrl ValueY
+  role: actuator
+  component: YS21004
+  observable_property: valve_command
+  description: Valve command
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: YC14008_Ctrl ValueY
+  role: actuator
+  component: YC14008
+  observable_property: valve_command
+  description: Valve command
+  evidence: complete PDF pp.6–7, Tables 2–3
+- name: source_row
+  role: annotation
+  component: supply_header
+  observable_property: source_row
+  description: Zero-based original CSV data-row index
+  evidence: complete PDF pp.6–7, Tables 2–3
+  derived: true
+- name: is_anomaly
+  role: annotation
+  component: supply_header
+  observable_property: binary_anomaly
+  description: 'Derived evaluation label: ID1 false, IDs2..10 true; unknown excluded'
+  evidence: complete PDF pp.6–7, Tables 2–3
+  derived: true
+control_loops:
+- actuator: YC14001
+  sensor: FIC14002_PV_Out ValueY
+- actuator: YC14008
+  sensor: PIC14007_PV_Out ValueY
+- actuator: YC21001
+  sensor: FIC21002_PV_Out ValueY
+- actuator: YC22001
+  sensor: FIC22002_PV_Out ValueY
+- actuator: YC23001
+  sensor: FIC23002_PV_Out ValueY
+faults:
+- deviation_id: 2
+  name: low_drive_speed
+  components:
+  - PL1200
+  phase_text: 1 till 3
+  change: 2300 1/min instead of 2600
+  evidence: complete PDF p.3, Table 1
+  onset_status: phase wording retained verbatim; no measured effect onset
+- deviation_id: 3
+  name: high_drive_speed
+  components:
+  - PL1200
+  phase_text: 1 till 3
+  change: 2900 1/min instead of 2600
+  evidence: complete PDF p.3, Table 1
+  onset_status: phase wording retained verbatim; no measured effect onset
+- deviation_id: 4
+  name: second_pump
+  components:
+  - PL1100
+  phase_text: 1 till 3
+  change: PL1100 at 2600 1/min
+  evidence: complete PDF p.3, Table 1
+  onset_status: phase wording retained verbatim; no measured effect onset
+- deviation_id: 5
+  name: stuck_valve_21006
+  components:
+  - YC21006
+  phase_text: 7 till 3
+  change: Valve at 100% instead of 75%
+  evidence: complete PDF p.3, Table 1
+  onset_status: phase wording retained verbatim; no measured effect onset
+- deviation_id: 6
+  name: stuck_valve_22006
+  components:
+  - YC22006
+  phase_text: 7 till 3
+  change: Valve at 100% instead of 75%
+  evidence: complete PDF p.3, Table 1
+  onset_status: phase wording retained verbatim; no measured effect onset
+- deviation_id: 7
+  name: stuck_valve_23006
+  components:
+  - YC23006
+  phase_text: 7 till 3
+  change: Valve at 100% instead of 75%
+  evidence: complete PDF p.3, Table 1
+  onset_status: phase wording retained verbatim; no measured effect onset
+- deviation_id: 8
+  name: short_circuit
+  components:
+  - YS14005
+  phase_text: 1 till 3
+  change: Spray-ball valve at 100%
+  evidence: complete PDF p.3, Table 1
+  onset_status: phase wording retained verbatim; no measured effect onset
+- deviation_id: 9
+  name: leakage
+  components:
+  - PL2150
+  - YS14004
+  phase_text: 1 till 7
+  change: PL2150 at 10 Hz; YS14004 at 100%
+  evidence: complete PDF p.3, Table 1
+  onset_status: phase wording retained verbatim; no measured effect onset
+- deviation_id: 10
+  name: no_venting
+  components:
+  - YS10004
+  phase_text: 1 till 2
+  change: Reservoir vent at 0% instead of 100%
+  evidence: complete PDF p.3, Table 1
+  onset_status: phase wording retained verbatim; no measured effect onset

@@ -1,0 +1,97 @@
+{
+  "assessment_counts": {
+    "four_tank": 12,
+    "hai_ds1": 10,
+    "hai_ds10": 11,
+    "hai_ds2": 10,
+    "hai_ds3": 10,
+    "hai_ds4": 10,
+    "hai_ds5": 11,
+    "hai_ds6": 12,
+    "hai_ds7": 11,
+    "hai_ds8": 11,
+    "hai_ds9": 12,
+    "swat": 12
+  },
+  "calibration_counts": {
+    "four_tank": 12,
+    "hai_ds1": 7,
+    "hai_ds10": 7,
+    "hai_ds2": 6,
+    "hai_ds3": 6,
+    "hai_ds4": 7,
+    "hai_ds5": 7,
+    "hai_ds6": 8,
+    "hai_ds7": 7,
+    "hai_ds8": 7,
+    "hai_ds9": 8,
+    "swat": 24
+  },
+  "datasets": [
+    "hai_ds1",
+    "hai_ds2",
+    "hai_ds3",
+    "hai_ds4",
+    "hai_ds5",
+    "hai_ds6",
+    "hai_ds7",
+    "hai_ds8",
+    "hai_ds9",
+    "hai_ds10",
+    "four_tank",
+    "swat"
+  ],
+  "development_seed": 23,
+  "history_ablation": true,
+  "preset": "paper",
+  "protocol": "safeprocess-fresh-v1",
+  "roles": {
+    "assessment": 12,
+    "decision_fit": 4,
+    "dictionary": 8,
+    "normal_calibration": 24,
+    "risk_calibration": 3,
+    "selection_normal_fit": 8
+  },
+  "schema_version": 1,
+  "seeds": [
+    23,
+    42,
+    101,
+    2027,
+    31415
+  ],
+  "temporal": true,
+  "temporal_seeds": [
+    23,
+    42
+  ],
+  "training": {
+    "batch_size": 512,
+    "dropout": 0.1,
+    "grad_clip": 1.0,
+    "hidden_size": 128,
+    "input_proj_dim": 64,
+    "latent_cap": 16,
+    "latent_fraction": 0.5,
+    "lr": 0.001,
+    "max_epochs": 3000,
+    "min_delta": 0.001,
+    "n_layers": 1,
+    "patience": 100,
+    "post_mlp_dropout": 0.0,
+    "post_mlp_ratio": 4,
+    "stride": 10,
+    "weight_decay": 0.0,
+    "window_length": 60
+  },
+  "tto": {
+    "init_window": 100,
+    "learning_rate": 0.01,
+    "max_consecutive_cycles": 200,
+    "max_cycles": 5000,
+    "max_seconds": 60.0,
+    "patience": 100,
+    "smooth_lambda": 0.001
+  }
+}

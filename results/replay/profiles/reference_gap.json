@@ -1,0 +1,2777 @@
+{
+  "threshold": 0.7999999999999999,
+  "eligible": true,
+  "grid": [
+    {
+      "threshold": 0.0,
+      "selected": 224,
+      "good": 207,
+      "wrong_or_not_beneficial": 17,
+      "normal_referrals": 0,
+      "normal_n": 3,
+      "acceptable": false
+    },
+    {
+      "threshold": 0.049999999999999996,
+      "selected": 223,
+      "good": 206,
+      "wrong_or_not_beneficial": 17,
+      "normal_referrals": 0,
+      "normal_n": 3,
+      "acceptable": false
+    },
+    {
+      "threshold": 0.09999999999999999,
+      "selected": 221,
+      "good": 205,
+      "wrong_or_not_beneficial": 16,
+      "normal_referrals": 0,
+      "normal_n": 3,
+      "acceptable": false
+    },
+    {
+      "threshold": 0.15,
+      "selected": 220,
+      "good": 205,
+      "wrong_or_not_beneficial": 15,
+      "normal_referrals": 0,
+      "normal_n": 3,
+      "acceptable": false
+    },
+    {
+      "threshold": 0.19999999999999998,
+      "selected": 219,
+      "good": 204,
+      "wrong_or_not_beneficial": 15,
+      "normal_referrals": 0,
+      "normal_n": 3,
+      "acceptable": false
+    },
+    {
+      "threshold": 0.24999999999999997,
+      "selected": 218,
+      "good": 204,
+      "wrong_or_not_beneficial": 14,
+      "normal_referrals": 0,
+      "normal_n": 3,
+      "acceptable": false
+    },
+    {
+      "threshold": 0.3,
+      "selected": 217,
+      "good": 203,
+      "wrong_or_not_beneficial": 14,
+      "normal_referrals": 0,
+      "normal_n": 3,
+      "acceptable": false
+    },
+    {
+      "threshold": 0.35,
+      "selected": 216,
+      "good": 202,
+      "wrong_or_not_beneficial": 14,
+      "normal_referrals": 0,
+      "normal_n": 3,
+      "acceptable": false
+    },
+    {
+      "threshold": 0.39999999999999997,
+      "selected": 216,
+      "good": 202,
+      "wrong_or_not_beneficial": 14,
+      "normal_referrals": 0,
+      "normal_n": 3,
+      "acceptable": false
+    },
+    {
+      "threshold": 0.44999999999999996,
+      "selected": 216,
+      "good": 202,
+      "wrong_or_not_beneficial": 14,
+      "normal_referrals": 0,
+      "normal_n": 3,
+      "acceptable": false
+    },
+    {
+      "threshold": 0.49999999999999994,
+      "selected": 215,
+      "good": 202,
+      "wrong_or_not_beneficial": 13,
+      "normal_referrals": 0,
+      "normal_n": 3,
+      "acceptable": false
+    },
+    {
+      "threshold": 0.5499999999999999,
+      "selected": 215,
+      "good": 202,
+      "wrong_or_not_beneficial": 13,
+      "normal_referrals": 0,
+      "normal_n": 3,
+      "acceptable": false
+    },
+    {
+      "threshold": 0.6,
+      "selected": 215,
+      "good": 202,
+      "wrong_or_not_beneficial": 13,
+      "normal_referrals": 0,
+      "normal_n": 3,
+      "acceptable": false
+    },
+    {
+      "threshold": 0.6499999999999999,
+      "selected": 213,
+      "good": 200,
+      "wrong_or_not_beneficial": 13,
+      "normal_referrals": 0,
+      "normal_n": 3,
+      "acceptable": false
+    },
+    {
+      "threshold": 0.7,
+      "selected": 213,
+      "good": 200,
+      "wrong_or_not_beneficial": 13,
+      "normal_referrals": 0,
+      "normal_n": 3,
+      "acceptable": false
+    },
+    {
+      "threshold": 0.7499999999999999,
+      "selected": 209,
+      "good": 199,
+      "wrong_or_not_beneficial": 10,
+      "normal_referrals": 0,
+      "normal_n": 3,
+      "acceptable": true
+    },
+    {
+      "threshold": 0.7999999999999999,
+      "selected": 208,
+      "good": 199,
+      "wrong_or_not_beneficial": 9,
+      "normal_referrals": 0,
+      "normal_n": 3,
+      "acceptable": true
+    },
+    {
+      "threshold": 0.85,
+      "selected": 207,
+      "good": 198,
+      "wrong_or_not_beneficial": 9,
+      "normal_referrals": 0,
+      "normal_n": 3,
+      "acceptable": true
+    },
+    {
+      "threshold": 0.8999999999999999,
+      "selected": 203,
+      "good": 197,
+      "wrong_or_not_beneficial": 6,
+      "normal_referrals": 0,
+      "normal_n": 3,
+      "acceptable": true
+    },
+    {
+      "threshold": 0.95,
+      "selected": 192,
+      "good": 188,
+      "wrong_or_not_beneficial": 4,
+      "normal_referrals": 0,
+      "normal_n": 3,
+      "acceptable": true
+    }
+  ],
+  "qualification": "empirical seed23 development selection, not a risk guarantee",
+  "unit": "four_tank",
+  "protocol_sha256": "3ca42df4dba653e3f4bce129a7b3e38ee7717fdd52cc0db644e83b1387661105",
+  "normal_profile": {
+    "path": "REDACTED_external-path_df578c9925e0",
+    "sha256": "6879835ecb06272e455623747631c17446fa049ac786ffc41d5ae2605f48d5ce",
+    "bytes": 6257
+  },
+  "original_selection": {
+    "path": "REDACTED_external-path_68c0a68286a4",
+    "sha256": "615c86ae31692d5f24b8a28207220f813da7c55c7296b43774fdaba4cc209a61",
+    "bytes": 66349
+  },
+  "frozen_risk_fields_reused": [
+    "winner",
+    "margin",
+    "correct_beneficial",
+    "normal",
+    "family"
+  ],
+  "risk_records": [
+    {
+      "case_id": "748255f6aeb57d39d281",
+      "normal": true,
+      "event_alarm": false,
+      "margin": 0.004641815970213792,
+      "winner": 7,
+      "correct_beneficial": false,
+      "family": "unchanged"
+    },
+    {
+      "case_id": "424543ca22da36767092",
+      "normal": true,
+      "event_alarm": false,
+      "margin": 0.8290106447040126,
+      "winner": 11,
+      "correct_beneficial": false,
+      "family": "unchanged"
+    },
+    {
+      "case_id": "c1871f0b622c864f2421",
+      "normal": true,
+      "event_alarm": false,
+      "margin": 0.2376753313281343,
+      "winner": 8,
+      "correct_beneficial": false,
+      "family": "unchanged"
+    },
+    {
+      "case_id": "49184426b7d558945622",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.99290972531395,
+      "winner": 0,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "437709e9fb7886bf52c2",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9958813264460817,
+      "winner": 0,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "c71d3b7dd6a5720b5dc7",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9901249140023831,
+      "winner": 0,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "e53f82e885522e78fc29",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9845796124111054,
+      "winner": 0,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "217b94652b1a5d12cb6b",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.996515638677229,
+      "winner": 0,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "790e61e05c82c5d80d60",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9915023096338991,
+      "winner": 0,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "e42343b191372ce898ac",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9931602909620617,
+      "winner": 0,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "53b5877f9e203079d4b4",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9933907968178407,
+      "winner": 1,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "04d8052c42d7874e212a",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9960811673123151,
+      "winner": 1,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "3e999e15311978c8f91b",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.990705434073548,
+      "winner": 1,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "c2a8b938375214fdadb7",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.7432459896268798,
+      "winner": 1,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "642426d0a4bb14d63aeb",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.995750316605717,
+      "winner": 1,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "4fcb2f3109bf14020746",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9852405468167145,
+      "winner": 1,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "bd8a4607fa1712ce77e5",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9978011123750209,
+      "winner": 1,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "79db76b161742aca264d",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.990631127946606,
+      "winner": 2,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "ad1f32123cf7053fa816",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.6091740510089956,
+      "winner": 2,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "687daa0c5fd11df9d453",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.012276437888500413,
+      "winner": 9,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "139d75d6d3e591c2207f",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.04881609677622695,
+      "winner": 9,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "1769b405bc1cb3644518",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.4565883633308194,
+      "winner": 2,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "ecac63a5773c29a08151",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9962456871611104,
+      "winner": 2,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "731a937158bb672bb0f2",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.04462108469678222,
+      "winner": 9,
+      "correct_beneficial": false,
+      "family": "stuck"
+    },
+    {
+      "case_id": "ec7d1e9b75e1dd249df9",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9975028306285542,
+      "winner": 3,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "655e3fb05845ce996459",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9986519130134911,
+      "winner": 3,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "145f6c1721812e1913ac",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9961868877725205,
+      "winner": 3,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "ca88ae80dfdc54b13658",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.995709842026967,
+      "winner": 3,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "aeb50e929ff6b78cd624",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9980660417787687,
+      "winner": 3,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "6b2f84a196eadb219931",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9973589343063058,
+      "winner": 3,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "b301469737a64688cb95",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.004641815970213792,
+      "winner": 7,
+      "correct_beneficial": false,
+      "family": "stuck"
+    },
+    {
+      "case_id": "534fe95ffe1b800c89e1",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9906642605197086,
+      "winner": 4,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "757e0b2d81329e42e7cb",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.7413110437076773,
+      "winner": 4,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "b4df887f1e672bab836b",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.2429155090879611,
+      "winner": 4,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "ca60503d6f646b8e4c1c",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.38625968260459853,
+      "winner": 9,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "bf63c5dc46d0161f02f5",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.9859289713701874,
+      "winner": 4,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "c39df991269250b0e709",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9914541322141259,
+      "winner": 4,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "b4a165a6842f93645882",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9956401695207194,
+      "winner": 4,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "0cd92ff93a4c13ff4f1c",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9938870417428468,
+      "winner": 5,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "385944172151791f9b9a",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9960345871099383,
+      "winner": 5,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "b4e77ea5d1b27b4aefe9",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9862998513970987,
+      "winner": 5,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "68004f872d37ea77e29c",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.06408269462110205,
+      "winner": 5,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "4b5f76f88dea1dc30c95",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9045288037971457,
+      "winner": 5,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "46f69e53b27c5d35c885",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9920410416041331,
+      "winner": 5,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "2c4d71ead381f0acec9e",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9961043788899301,
+      "winner": 5,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "c3974e9ba1ee2c62d95c",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.991905551216929,
+      "winner": 6,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "3cb509afab570c4e1f9a",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9935673703584611,
+      "winner": 6,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "b74f539c61228f9549ff",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.989027318832963,
+      "winner": 6,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "942aaba75a480bb620f2",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.1827016644308992,
+      "winner": 6,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "f2df0dfb2760cbf07f8f",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.28213061471015,
+      "winner": 6,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "f5e39cd67aa1ca9543b7",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9586744013081328,
+      "winner": 6,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "4cd01a298ac39d6f47fa",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9965054673857495,
+      "winner": 6,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "1ae7ddffff8205da7ae6",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.994602788031163,
+      "winner": 7,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "44d2303b7e3ee6c47aa4",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9906547504866599,
+      "winner": 7,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "850d0ed8cde1b473a33d",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.9215566607331653,
+      "winner": 7,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "4a719cda8a4fda265a6e",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.7088175997710725,
+      "winner": 9,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "5f6852efa28bb9581ec9",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.09356105302080964,
+      "winner": 7,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "388d78b871c0b18e03f3",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9941506640753713,
+      "winner": 7,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "0d1de1c856a41e39e579",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.9886386029262836,
+      "winner": 7,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "c59cdac89c9381b6fd98",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9975812385457081,
+      "winner": 8,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "459982824e28b10f3cdd",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9982537385120206,
+      "winner": 8,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "07f956cc95e5e16c2cc6",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9922323680300558,
+      "winner": 8,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "62f5b9dc3a8340fd8ade",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9922483634691586,
+      "winner": 8,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "e4fd77fe8a6f9491072e",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9983267138648446,
+      "winner": 8,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "3fc3100caf23184f02db",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.997733055645132,
+      "winner": 8,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "529346ec3b68cf2708d7",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.026563863898255158,
+      "winner": 7,
+      "correct_beneficial": false,
+      "family": "stuck"
+    },
+    {
+      "case_id": "08d12bf1a1419503e5ad",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9927417429047438,
+      "winner": 9,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "a141f0b5885000f81654",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9957484118713615,
+      "winner": 9,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "134f2f971c486fe4e377",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.016108614468953453,
+      "winner": 7,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "79827ea12842fba5d9ed",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.8942894148684793,
+      "winner": 9,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "97275f24fc4143aaefce",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9957010538453177,
+      "winner": 9,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "a67f40052d21248d31d8",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9925560379341274,
+      "winner": 9,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "8b13ecca16c9adb31094",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.8849668155341681,
+      "winner": 9,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "bb8b7421e157869b2a81",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9933782140913874,
+      "winner": 10,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "8816e9389dc19d908f13",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9953919171633479,
+      "winner": 10,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "0746464ad822f2ebbd1b",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.2130276348843727,
+      "winner": 9,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "05efb3da09d2ea05689c",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.6324105300431268,
+      "winner": 10,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "32cd342a37af842f9b9f",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9968201728280834,
+      "winner": 10,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "be9194fe28b3bcb04c87",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.993239174593866,
+      "winner": 10,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "5941c6a39ea4e6d52d1c",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9234112039405465,
+      "winner": 10,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "a6a5ef3a1ed3b0877a4f",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9954195303630666,
+      "winner": 11,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "108e608cfc950088b742",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9964106184381664,
+      "winner": 11,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "e62e6442d3f21122780a",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9830110752540542,
+      "winner": 11,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "736cd848b697e9592e6e",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9476937520177781,
+      "winner": 11,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "ef5bb2aa95c5b59fa358",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9966156192602805,
+      "winner": 11,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "2deaf699e282aaad9c61",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9952225143820033,
+      "winner": 11,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "8455b9950e30279b67c7",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.19784356222308763,
+      "winner": 9,
+      "correct_beneficial": false,
+      "family": "stuck"
+    },
+    {
+      "case_id": "1aa42cf06f5b24b625fe",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9932440267107505,
+      "winner": 12,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "1d111e4e5bb94fc7b514",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9947469336216247,
+      "winner": 12,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "e3d9243b69cf679ce5ce",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.9083463187794032,
+      "winner": 12,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "bd0f4227996311f94440",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.9467376664240064,
+      "winner": 12,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "9affb5a4c1f2b61f766c",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9965261568184731,
+      "winner": 12,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "fb7e1584e90ea40c291d",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9945543235547789,
+      "winner": 12,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "43f39aaa14c05dfa0a3e",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.5428044132828654,
+      "winner": 12,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "9b53faa37f0b4e4cca32",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9839418851268853,
+      "winner": 0,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "4fa0f7ec42a816749bc7",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9933590520938006,
+      "winner": 0,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "c3f7a03fa32a536b100f",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9794758766608699,
+      "winner": 0,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "26004a0dc33c86aca8d5",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9810143256274154,
+      "winner": 0,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "c389476a20b759357ccb",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9930955077059204,
+      "winner": 0,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "67ff7580ac276c273148",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9881522398749508,
+      "winner": 0,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "76114bf2fdec336011a3",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.7464049346503497,
+      "winner": 0,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "3a68882786dfa175254a",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9863910087329316,
+      "winner": 1,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "44543e8caa9f3ce2688a",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9911223635141608,
+      "winner": 1,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "73b35f11a07920bda7ca",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.40280056521712126,
+      "winner": 11,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "b5f220430c27b4c3a7f0",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.00358493983104502,
+      "winner": 1,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "4fe78b6532eda29d6e6a",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9914762345626494,
+      "winner": 1,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "4c433a388689c72f0fe7",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9873326522198224,
+      "winner": 1,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "35142ee9767a262f5f68",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9946599178511845,
+      "winner": 1,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "4245dafbbad78e56003e",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9724129639388424,
+      "winner": 2,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "50eac907a8272007b29a",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.8784522060397579,
+      "winner": 11,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "9fd65f2b488369701579",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.8290106447040126,
+      "winner": 11,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "19739ff1ed4f30d018c3",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.8290106447040126,
+      "winner": 11,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "636408dac4633deace4d",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9421327655391519,
+      "winner": 11,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "ec30b822f8c1df1dcfe2",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9740890789897853,
+      "winner": 2,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "dfa6bebca0d8f27235a2",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.8620181546948292,
+      "winner": 11,
+      "correct_beneficial": false,
+      "family": "stuck"
+    },
+    {
+      "case_id": "85e18d5aa39701f95b71",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9918797267659515,
+      "winner": 3,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "523fc821ea8d3d52f62c",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9946875324294063,
+      "winner": 3,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "8d3805e33bf69929f8c5",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.13214556032762392,
+      "winner": 11,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "e556e2d3fe2a31c4e8b6",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.9195847973820018,
+      "winner": 3,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "116b9e0acc187c7f721f",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9970118646517662,
+      "winner": 3,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "4f2d99214ab223e13f1e",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9954260507570677,
+      "winner": 3,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "418a75efb90bd7bf540a",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9983552538727036,
+      "winner": 3,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "9dd8475865392477d313",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9820648609572125,
+      "winner": 4,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "16b87da97fd7df227244",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9892534674832774,
+      "winner": 4,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "ea47dd4aacbaf2db8f57",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9802473320027288,
+      "winner": 4,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "4462db29875d484cadec",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.979789785423284,
+      "winner": 4,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "839b38eb1120ca6aca8f",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9892534674832774,
+      "winner": 4,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "2fe65406187a95d87ccf",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9808941842625498,
+      "winner": 4,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "8ba3f129a7045a2a2b03",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9941152365632139,
+      "winner": 4,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "3421fa7fdec3b597cb84",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9062994872633617,
+      "winner": 5,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "a12d12293fd3d3152a61",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9724992773743851,
+      "winner": 5,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "655bb870b8afd670ab9f",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.957465145359009,
+      "winner": 5,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "5693ad8ef29d8e6c1c81",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9789951651099859,
+      "winner": 5,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "569c18291e9d5ad96959",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9839098442698453,
+      "winner": 5,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "7c4c71130c405e5928c4",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9824729182376886,
+      "winner": 5,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "1cda6ce45e29352fb2bb",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.952369235530174,
+      "winner": 5,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "0f009e385d1edc7b60c4",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9881056793846702,
+      "winner": 6,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "79b1dc61f3baeaadec1f",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.993123704909433,
+      "winner": 6,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "8e1fe2a10c5192e3dd85",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9889199218499853,
+      "winner": 6,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "09f5dc2257d6548b5123",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9784930458821695,
+      "winner": 6,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "d9cc6af34a9c40b7aaf1",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9932367689942182,
+      "winner": 6,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "6807e20dddee2584e652",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9883188175259806,
+      "winner": 6,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "2d03bc241cf6de32fe99",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9943214508023039,
+      "winner": 6,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "dfddba93a9621f84943a",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.985431835346664,
+      "winner": 7,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "25534e01b829bedce5c7",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9689227961514264,
+      "winner": 7,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "6a8aa7b895c27398cf23",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.6808268045573945,
+      "winner": 11,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "de996136d210acbb9421",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.865657682183639,
+      "winner": 11,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "5a9c65e4fa3a85f20965",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9226558666362975,
+      "winner": 11,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "b891993375f1bdab7726",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9813139718685292,
+      "winner": 7,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "3df2f1bb364c6029da43",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.80999130122774,
+      "winner": 7,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "33ed5633d260c8792172",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9940255528796941,
+      "winner": 8,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "1ed174097789c22507f9",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9954107810290681,
+      "winner": 8,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "5b260d66fcefb9d2a54c",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.996567251264105,
+      "winner": 8,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "79864e1b4faee90818ac",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9957094679705013,
+      "winner": 8,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "5022f6b04f5b8d7a0b1b",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9957834372591793,
+      "winner": 8,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "c7fc03de24a4da184fec",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9942079604502092,
+      "winner": 8,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "6a205e78a9ee0516be53",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.8290106447040126,
+      "winner": 11,
+      "correct_beneficial": false,
+      "family": "stuck"
+    },
+    {
+      "case_id": "10985a6f5125e76d7edc",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9880640679106802,
+      "winner": 9,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "40ca18533a7d511f3723",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9931573749233249,
+      "winner": 9,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "beb8a999c7143bd84626",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.05857833054440642,
+      "winner": 11,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "8a71ffeea11ddcec4fe7",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.08774622709624291,
+      "winner": 11,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "8d8ae13b6d600b014b81",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.993103367503473,
+      "winner": 9,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "f7980244ff188d464bcf",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9880863382841967,
+      "winner": 9,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "e76b72ce7661c5ff86a4",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.30354247780537835,
+      "winner": 9,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "abb1d86ed823b174da16",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9796541474379244,
+      "winner": 10,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "cd707506ea5cefb00374",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9892534674832774,
+      "winner": 10,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "c4ed9dfa83f0ec0f89b2",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.4055168109888783,
+      "winner": 9,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "73d3f72e42b32d35a13f",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9559506982424134,
+      "winner": 10,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "59fa65ee29c70470e0ae",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9899183111532424,
+      "winner": 10,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "650d34327f9d1ae13fec",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9819398125750951,
+      "winner": 10,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "3ce5f5101da03ac9e2d8",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.6186627963713207,
+      "winner": 10,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "3d7fc402bf16bab3b0e4",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9824210095657286,
+      "winner": 11,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "69ed056233bc7159d430",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9899745859761653,
+      "winner": 11,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "6f307e79d5497ae3c4ce",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9736041035778383,
+      "winner": 11,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "51737060945a566640c4",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.363883820904811,
+      "winner": 7,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "8b5bb826b43c57d836f2",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9901598961388705,
+      "winner": 11,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "dae12688d7ccea6fe81b",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9827436398343435,
+      "winner": 11,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "3cbddd7af06d0144ccd7",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.47516429880622063,
+      "winner": 11,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "f623e870be02860dac9f",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9860016642778878,
+      "winner": 12,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "aa64fb407c314ff0f195",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.971529311150495,
+      "winner": 12,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "19069fa716d12fb110e9",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.7848818667924184,
+      "winner": 11,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "80dfeee6e2be88fe7957",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.8806403642957583,
+      "winner": 11,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "deb874c6c19feb126afb",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9904118528877695,
+      "winner": 12,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "0e7afed060fbcda8a611",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9897059160502235,
+      "winner": 12,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "3fb80e39776ede83916e",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.8531892530199914,
+      "winner": 11,
+      "correct_beneficial": false,
+      "family": "stuck"
+    },
+    {
+      "case_id": "39ab7da2c1010214466b",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9922552214663476,
+      "winner": 0,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "8b256091a3d98af1d28c",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9949280367761622,
+      "winner": 0,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "4eecaecba263a79f0d75",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9603150617671992,
+      "winner": 0,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "6e5b25a6146a36ec9ba2",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9827289127380919,
+      "winner": 0,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "ba9cc793256c252810a0",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9943313629599065,
+      "winner": 0,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "8c272eaabcb0aed40257",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9921402800352414,
+      "winner": 0,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "43f867e1eb2a5467e4d7",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9988019686616579,
+      "winner": 0,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "796c38e49f3b72b8d17a",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9644431479982162,
+      "winner": 1,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "67787ef1bf9f05346b5a",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9797379254128118,
+      "winner": 1,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "698d2738397bd6b98650",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9704357324463041,
+      "winner": 1,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "fd8d321232e8b9f8a7ad",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.8913311613172024,
+      "winner": 1,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "048025477acf3a06502a",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9801590938202523,
+      "winner": 1,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "73f149345719388f1164",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9622913482671293,
+      "winner": 1,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "8ab06eb2ce57dd15e59e",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9943531283321999,
+      "winner": 1,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "fb62a029381fe34ff93e",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9915582734313811,
+      "winner": 2,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "d0eb2625d3e588c9d260",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.27253641367240294,
+      "winner": 7,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "751072928337aa378689",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.36604137929512065,
+      "winner": 8,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "c0b848596a6d339c25dc",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.2861302161497576,
+      "winner": 2,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "6f87bbdcc150f5b8454e",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.8259101919787055,
+      "winner": 2,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "1dc5516af2a64bed271d",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9914701509654815,
+      "winner": 2,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "5e278901c203a6fe8104",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.21811170391250057,
+      "winner": 11,
+      "correct_beneficial": false,
+      "family": "stuck"
+    },
+    {
+      "case_id": "c6cd230b67afd9ef5465",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9935528865902168,
+      "winner": 3,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "9fd848fbc6600f05ec43",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9963091787177877,
+      "winner": 3,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "e541e95cca143b8e62aa",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9886929348657848,
+      "winner": 3,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "93e908f3c9ea010c7f21",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.8306015788828791,
+      "winner": 3,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "ead4d874ae11c60293ec",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9964201230616055,
+      "winner": 3,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "69f2c84eeb98dd7c2250",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9924704138776901,
+      "winner": 3,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "8c38adc56886298c700a",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.996753017064506,
+      "winner": 3,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "0bc0c570d71bb29ab65a",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9834130638946709,
+      "winner": 4,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "5422739d284d0bba18af",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9897867147078155,
+      "winner": 4,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "0c7fff51c677912fa763",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.8681229465534954,
+      "winner": 4,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "3a4a19732e59a41253f7",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9429140600457633,
+      "winner": 4,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "3dc53fbce8daacacc11d",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9886102148489565,
+      "winner": 4,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "d3131a474121ea951521",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9854517216106661,
+      "winner": 4,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "86a0de062264abc6160c",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9966246337301227,
+      "winner": 4,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "b5208240569109f00a21",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9225284771039638,
+      "winner": 5,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "6512e33e21eb5403410d",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9808017780178528,
+      "winner": 5,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "e8231aa1f259aaa74c4e",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9825564253644582,
+      "winner": 5,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "febdddb641d1605b4dc5",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9737380379170123,
+      "winner": 5,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "58032274444fcb6d656d",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9915510699207861,
+      "winner": 5,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "6a8469d776ceaf0eb65c",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9845492255564321,
+      "winner": 5,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "8efd4e84c0218954a666",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9965894636171286,
+      "winner": 5,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "d8b9c9b1eaf865fd395a",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9847647692457209,
+      "winner": 6,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "4d2c7589e528d402b9d5",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9913079403342139,
+      "winner": 6,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "be14dfbd490bfbf3e64a",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9839614354993573,
+      "winner": 6,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "040478703c81ef6d8632",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9804794350489138,
+      "winner": 6,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "3dd1f637c7c76122b9ba",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9916712656744371,
+      "winner": 6,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "8980dba59f64cf39f4eb",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9868059309799307,
+      "winner": 6,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "29487a627a4700b5ec8e",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.99647158780856,
+      "winner": 6,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "35e420a73b3bd61d6763",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9958264806136224,
+      "winner": 7,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "db5ae0d0d2995f2f4ef8",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9450677189203794,
+      "winner": 7,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "2fe5f0cf3e1a1579acfc",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.42917407963721976,
+      "winner": 2,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "043bac6193d25d251510",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.014714888427683814,
+      "winner": 2,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "fa09587210e560c167e3",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.20479382995997342,
+      "winner": 7,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "565658842b80b0a6b62f",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9948546154034021,
+      "winner": 7,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "e0ebd2099875363cd357",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.5440500749809505,
+      "winner": 7,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "761c4fa8b2a97e90d847",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9899564555093742,
+      "winner": 8,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "a4b9d90b26b5bcde034d",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9937551222459894,
+      "winner": 8,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "a09edf871a261bcd46fa",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9675226921289275,
+      "winner": 8,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "3165a61a64736de54d5e",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9737309273946196,
+      "winner": 8,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "b4df1604b3369a6f95e4",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.99351638735984,
+      "winner": 8,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "94c2133914841bf5f18e",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9898356988287921,
+      "winner": 8,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "aab7e968f0e516522f86",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.4881019426163949,
+      "winner": 8,
+      "correct_beneficial": false,
+      "family": "stuck"
+    },
+    {
+      "case_id": "b7ba579129e4af7ca4bd",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9869634754547264,
+      "winner": 9,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "cb89befe180c48e5026a",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9914074496752162,
+      "winner": 9,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "7a717c199b911b0b7fc0",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.2163898389738784,
+      "winner": 7,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "e2aa75b8e5b8aea32050",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.8295241467343908,
+      "winner": 9,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "7c2d1f878d484c8cd90c",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9917368884566224,
+      "winner": 9,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "53500cb52d5557dd840e",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.986946784006448,
+      "winner": 9,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "bac2f1862dbd8d04edff",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.5680011717182374,
+      "winner": 9,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "d787dcb41e11c9a6ed7c",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9886188758924157,
+      "winner": 10,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "4ebd0d363f64fc093f9f",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9919286598868297,
+      "winner": 10,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "844aa196ef530b3dba3f",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.2099999817046982,
+      "winner": 2,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "6ddc8c59e7e5e73c6816",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9487978935459548,
+      "winner": 10,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "1b10e2a8ee4f143d4710",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9928510903110839,
+      "winner": 10,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "e85395164307fe01c77f",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9877559664365397,
+      "winner": 10,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "e55b6ad893b443069216",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9985185772506203,
+      "winner": 10,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "b8e67b66790540be0042",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9668460324611181,
+      "winner": 11,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "4824887870f6cf03d44f",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.973752679047279,
+      "winner": 11,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "b136fcc007efa9209a2e",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9621580015627957,
+      "winner": 11,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "89aa8c11863820001ef7",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.8415388264643104,
+      "winner": 2,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "34714f3cfb9c7403aed0",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9746019413281306,
+      "winner": 11,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "980afb2e846366afd9b6",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9617122089083128,
+      "winner": 11,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "21e93490481452d9c798",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9959091464627345,
+      "winner": 11,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "f7b08c00ed51b032ca6c",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9623786642365073,
+      "winner": 12,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "290c4945c996f481daf7",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9645250630674821,
+      "winner": 12,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "83bbccdf747bc5114d32",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.15789374959915176,
+      "winner": 2,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "6e8257fefaeabb22cb2f",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.6674996746726715,
+      "winner": 12,
+      "correct_beneficial": false,
+      "family": "drift"
+    },
+    {
+      "case_id": "48c1f731dddd0a9889c5",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9479490365827473,
+      "winner": 12,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "fcfdc7975dcb57e89aab",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9626315561272579,
+      "winner": 12,
+      "correct_beneficial": true,
+      "family": "drift"
+    },
+    {
+      "case_id": "284e8580e0a049352b54",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9963943701573098,
+      "winner": 12,
+      "correct_beneficial": true,
+      "family": "stuck"
+    },
+    {
+      "case_id": "42788192ca508733094e",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.7393787700428816,
+      "winner": 0,
+      "correct_beneficial": false,
+      "family": "native_process"
+    },
+    {
+      "case_id": "038026d03e22dc092a6a",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9823183867496168,
+      "winner": 10,
+      "correct_beneficial": false,
+      "family": "native_process"
+    },
+    {
+      "case_id": "465bc756f438258c4b50",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9873177404494546,
+      "winner": 10,
+      "correct_beneficial": false,
+      "family": "native_process"
+    },
+    {
+      "case_id": "0fb26a5bf0ed98e892af",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.744519427584474,
+      "winner": 4,
+      "correct_beneficial": false,
+      "family": "native_process"
+    },
+    {
+      "case_id": "c9c561f2e24bb1fb32d5",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.45704859322730307,
+      "winner": 3,
+      "correct_beneficial": false,
+      "family": "native_process"
+    },
+    {
+      "case_id": "435e044925e90558cc23",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.7749759227166872,
+      "winner": 3,
+      "correct_beneficial": false,
+      "family": "native_process"
+    },
+    {
+      "case_id": "639a5ad1e1718919c351",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.7311553540321487,
+      "winner": 11,
+      "correct_beneficial": false,
+      "family": "native_process"
+    },
+    {
+      "case_id": "ba3ce47e9df103764d53",
+      "normal": false,
+      "event_alarm": false,
+      "margin": 0.795690211936565,
+      "winner": 9,
+      "correct_beneficial": false,
+      "family": "native_process"
+    },
+    {
+      "case_id": "bb7cfee7619ddc654ce8",
+      "normal": false,
+      "event_alarm": true,
+      "margin": 0.9670933084751497,
+      "winner": 9,
+      "correct_beneficial": false,
+      "family": "native_process"
+    }
+  ],
+  "risk_only": true,
+  "decision_fit_used_to_select": false,
+  "decision_fit_new_admissions": 377,
+  "process_trust_validity_note": "Original grid selects on risk numeric event and frozen margin/benefit labels before process/trust guards, exactly as frozen choose_threshold. Assessment uses all original saved process/trust/validity guards; missing development process flags are not invented."
+}

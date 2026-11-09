@@ -1,0 +1,5 @@
+qualification_group,graph_status,graph_status_source,N,P,F,Q_P
+configured_no_observed_response,missing_not_cached,missing,5,0,0,0
+locally_unverified,missing_not_cached,missing,225,53,64,0
+response_supported,disconnected_or_incomplete_graph,retained_illustrative_trace,1,1,0,0
+response_supported,missing_not_cached,missing,24,14,0,0

@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.pdf binary
+*.npz binary
+*.parquet binary
+results/** -text
+src/safeprocess/resources/CPSWatch-1.0.1.ttl -text -whitespace

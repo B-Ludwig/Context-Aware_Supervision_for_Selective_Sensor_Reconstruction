@@ -1,0 +1,1147 @@
+version: 1
+evidence_sources:
+  M16-ARCH: 'Mathur and Tippenhauer (2016), SWaT: A Water Treatment Testbed for Research
+    and Training on ICS Security, Section II and Figure 2.'
+  M16-EXP: 'Mathur and Tippenhauer (2016), SWaT: A Water Treatment Testbed for Research
+    and Training on ICS Security, Section III.'
+  G17-PROC: Goh et al. (2017), A Dataset to Support Research in the Design of Secure
+    Water Treatment Systems, Section 2.1.
+  G17-ATT: Goh et al. (2017), A Dataset to Support Research in the Design of Secure
+    Water Treatment Systems, attack-scenario description.
+  G17-T2: Goh et al. (2017), A Dataset to Support Research in the Design of Secure
+    Water Treatment Systems, Section 4.1 and Table 2.
+  W18-T1: Wang et al. (2018), Verifying a Water Treatment System, Background and Table
+    1.
+  W18-RES: Wang et al. (2018), Verifying a Water Treatment System, case-study results.
+  BLOCK-DIAGRAM: SWaT physical-process block diagram supplied with the acquisition
+    documentation. Obtain from the dataset provider.
+  REL: 'Authored SWaT physical-data audit: Normal_v0/Normal_v1 aliasing and published
+    engineering-unit discrepancies retained as source notes.'
+  ATT: Provider List_of_attacks_Final.xlsx, or a user-supplied CSV transcription with
+    attack_number/start/end.
+  TAX: Authored tag taxonomy. Sensor/state separation is implemented in datasets/swat.py
+    and paper_channels.json.
+plants:
+- id: swat-water-treatment-testbed
+  label: Secure Water Treatment (SWaT) testbed
+  components:
+  - id: P1
+    label: P1 raw-water storage and transfer
+    type: treatment-stage
+    parent: swat-water-treatment-testbed
+    role: process-stage
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, P1 paragraph and Figure 2; G17-PROC, Section 2.1
+  - id: raw-water-inlet
+    label: Raw-water inlet
+    type: source
+    parent: P1
+    role: raw-water-source
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 rows 1 and 3; BLOCK-DIAGRAM
+  - id: MV101
+    label: Raw-water inlet motorized valve MV101
+    type: valve
+    parent: P1
+    role: inlet-flow-control
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 3
+  - id: T101
+    label: Raw-water tank T101
+    type: tank
+    parent: P1
+    role: raw-water-vessel
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, P1 paragraph and Figure 2; G17-PROC, Section 2.1
+  - id: P1-transfer-pumps
+    label: P1 raw-water transfer-pump bank
+    type: functional-system
+    parent: P1
+    role: transfer-system
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 rows 4-5
+  - id: P101
+    label: Duty raw-water transfer pump P101
+    type: pump
+    parent: P1-transfer-pumps
+    role: duty-transfer-pump
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 4
+  - id: P102
+    label: Backup raw-water transfer pump P102
+    type: pump
+    parent: P1-transfer-pumps
+    role: backup-transfer-pump
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 5
+  - id: P2
+    label: P2 chemical dosing and static mixing
+    type: treatment-stage
+    parent: swat-water-treatment-testbed
+    role: process-stage
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, P2 paragraph and Figure 2; G17-PROC, Section 2.1
+  - id: P2-dosing-line
+    label: P2 raw-water and chemical-dosing line
+    type: pipe
+    parent: P2
+    role: chemical-contact-flow-path
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, P2 paragraph and Figure 2; BLOCK-DIAGRAM
+  - id: NaCl-source
+    label: Sodium-chloride source
+    type: source
+    parent: P2
+    role: chemical-source
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, Figure 2; G17-T2, Section 4.1 Table 2 rows 6 and
+      11-12
+  - id: sodium-chloride-dosing
+    label: Sodium-chloride dosing branch
+    type: chemical-dosing
+    parent: P2
+    role: dosing-system
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 rows 6 and 11-12
+  - id: P201
+    label: Duty sodium-chloride dosing pump P201
+    type: pump
+    parent: sodium-chloride-dosing
+    role: duty-dosing-pump
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 11
+  - id: P202
+    label: Backup sodium-chloride dosing pump P202
+    type: pump
+    parent: sodium-chloride-dosing
+    role: backup-dosing-pump
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 12
+  - id: HCl-source
+    label: Hydrochloric-acid source
+    type: source
+    parent: P2
+    role: chemical-source
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, Figure 2; G17-T2, Section 4.1 Table 2 rows 7 and
+      13-14
+  - id: hydrochloric-acid-dosing
+    label: Hydrochloric-acid dosing branch
+    type: chemical-dosing
+    parent: P2
+    role: dosing-system
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 rows 7 and 13-14
+  - id: P203
+    label: Duty hydrochloric-acid dosing pump P203
+    type: pump
+    parent: hydrochloric-acid-dosing
+    role: duty-dosing-pump
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 13
+  - id: P204
+    label: Backup hydrochloric-acid dosing pump P204
+    type: pump
+    parent: hydrochloric-acid-dosing
+    role: backup-dosing-pump
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 14
+  - id: NaOCl-source
+    label: Sodium-hypochlorite source
+    type: source
+    parent: P2
+    role: chemical-source
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, Figure 2; G17-T2, Section 4.1 Table 2 rows 8 and
+      15-16
+  - id: sodium-hypochlorite-dosing
+    label: Sodium-hypochlorite dosing branch
+    type: chemical-dosing
+    parent: P2
+    role: dosing-system
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 rows 8 and 15-16
+  - id: P205
+    label: Duty sodium-hypochlorite dosing pump P205
+    type: pump
+    parent: sodium-hypochlorite-dosing
+    role: duty-dosing-pump
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 15
+  - id: P206
+    label: Backup sodium-hypochlorite dosing pump P206
+    type: pump
+    parent: sodium-hypochlorite-dosing
+    role: backup-dosing-pump
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 16
+  - id: static-mixer
+    label: P2 static mixer
+    type: mixer
+    parent: P2
+    role: mixing-unit
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, P2 paragraph and Figure 2; BLOCK-DIAGRAM
+  - id: MV201
+    label: P2 outlet valve MV201 to the UF-feed tank
+    type: valve
+    parent: P2
+    role: uf-feed-tank-flow-control
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 10
+  - id: P3
+    label: P3 ultrafiltration
+    type: treatment-stage
+    parent: swat-water-treatment-testbed
+    role: process-stage
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, P3 paragraph and Figure 2; G17-PROC, Section 2.1
+  - id: T301
+    label: UF-feed tank T301
+    type: tank
+    parent: P3
+    role: uf-feed-vessel
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, P3 paragraph and Figure 2
+  - id: P3-feed-pumps
+    label: UF-feed pump bank
+    type: functional-system
+    parent: P3
+    role: transfer-system
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 rows 24-25
+  - id: P301
+    label: Backup UF-feed pump P301
+    type: pump
+    parent: P3-feed-pumps
+    role: backup-feed-pump
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 24
+  - id: P302
+    label: Duty UF-feed pump P302
+    type: pump
+    parent: P3-feed-pumps
+    role: duty-feed-pump
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 25
+  - id: UF-unit
+    label: Ultrafiltration membrane unit
+    type: ultrafiltration
+    parent: P3
+    role: filtration-unit
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, P3 paragraph and Figure 2; G17-PROC, Section 2.1
+  - id: MV301
+    label: UF-backwash process valve MV301
+    type: valve
+    parent: P3
+    role: uf-backwash-control
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 20
+    context:
+      exact_pipe_position: unresolved-from-integrated-sources
+  - id: MV302
+    label: UF-output valve MV302 toward dechlorination
+    type: valve
+    parent: P3
+    role: uf-output-control
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 21
+  - id: MV303
+    label: UF-backwash drain valve MV303
+    type: valve
+    parent: P3
+    role: backwash-drain-control
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 22
+  - id: MV304
+    label: UF drain valve MV304
+    type: valve
+    parent: P3
+    role: uf-drain-control
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 23
+  - id: uf-backwash-drain
+    label: UF-backwash drain
+    type: sink
+    parent: P3
+    role: backwash-drain
+    assertion_status: inferred
+    evidence: G17-T2, Section 4.1 Table 2 row 22 establishes the valve duty; exact
+      drain endpoint is not named
+  - id: uf-drain
+    label: UF process drain
+    type: sink
+    parent: P3
+    role: process-drain
+    assertion_status: inferred
+    evidence: G17-T2, Section 4.1 Table 2 row 23 establishes the valve duty; exact
+      drain endpoint is not named
+  - id: P4
+    label: P4 dechlorination and RO-feed storage
+    type: treatment-stage
+    parent: swat-water-treatment-testbed
+    role: process-stage
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, P4 paragraph and Figure 2; G17-PROC, Section 2.1
+  - id: T401
+    label: RO-feed tank T401
+    type: tank
+    parent: P4
+    role: ro-feed-vessel
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, P4 paragraph and Figure 2
+  - id: P4-feed-pumps
+    label: RO-feed pump bank
+    type: functional-system
+    parent: P4
+    role: transfer-system
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 rows 30-31
+  - id: P401
+    label: Backup RO-feed pump P401
+    type: pump
+    parent: P4-feed-pumps
+    role: backup-feed-pump
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 30
+  - id: P402
+    label: Duty RO-feed pump P402
+    type: pump
+    parent: P4-feed-pumps
+    role: duty-feed-pump
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 31
+  - id: UV401
+    label: Ultraviolet dechlorination unit UV401
+    type: uv-dechlorination
+    parent: P4
+    role: treatment-unit
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 34; M16-ARCH, Section II, P4 paragraph
+  - id: P4-dechlorination-line
+    label: P4 dechlorinated-water and water-quality line
+    type: pipe
+    parent: P4
+    role: dechlorination-flow-path
+    assertion_status: inferred
+    evidence: M16-ARCH, Section II, P4 paragraph and Figure 2; BLOCK-DIAGRAM
+  - id: NaHSO3-source
+    label: Sodium-bisulfite source
+    type: source
+    parent: P4
+    role: chemical-source
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, P4 paragraph and Figure 2; BLOCK-DIAGRAM
+  - id: bisulfite-dosing
+    label: Sodium-bisulfite dosing branch
+    type: chemical-dosing
+    parent: P4
+    role: dosing-system
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, P4 paragraph; G17-T2, Section 4.1 Table 2 rows
+      32-33
+  - id: P403
+    label: Duty sodium-bisulfite dosing pump P403
+    type: pump
+    parent: bisulfite-dosing
+    role: duty-dosing-pump
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 32; M16-ARCH, Section II, P4 paragraph
+  - id: P404
+    label: Backup sodium-bisulfite dosing pump P404
+    type: pump
+    parent: bisulfite-dosing
+    role: backup-dosing-pump
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 33; M16-ARCH, Section II, P4 paragraph
+  - id: P5
+    label: P5 reverse osmosis
+    type: treatment-stage
+    parent: swat-water-treatment-testbed
+    role: process-stage
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, P5 paragraph and Figure 2; G17-PROC, Section 2.1
+  - id: cartridge-filter
+    label: Cartridge filter
+    type: filter
+    parent: P5
+    role: pretreatment-filter
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, P5 paragraph and Figure 2; BLOCK-DIAGRAM
+  - id: P5-boost-pumps
+    label: RO boost-pump bank
+    type: functional-system
+    parent: P5
+    role: transfer-system
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 rows 43-44
+  - id: P501
+    label: Duty RO boost pump P501
+    type: pump
+    parent: P5-boost-pumps
+    role: duty-boost-pump
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 43
+  - id: P502
+    label: Backup RO boost pump P502
+    type: pump
+    parent: P5-boost-pumps
+    role: backup-boost-pump
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 44
+  - id: ro-feed-line
+    label: RO-feed line
+    type: pipe
+    parent: P5
+    role: ro-feed-flow-path
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 rows 35-37, 39 and 45; M16-ARCH, Section
+      II, P5 paragraph
+  - id: RO-unit
+    label: Three-stage reverse-osmosis unit
+    type: reverse-osmosis
+    parent: P5
+    role: filtration-unit
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, P5 paragraph and Figure 2; G17-PROC, Section 2.1
+  - id: ro-permeate-line
+    label: RO permeate line
+    type: pipe
+    parent: P5
+    role: permeate-flow-path
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 rows 38, 40 and 46; M16-ARCH, Section II,
+      P5 paragraph
+  - id: ro-reject-line
+    label: RO reject line
+    type: pipe
+    parent: P5
+    role: reject-flow-path
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 rows 41 and 47; M16-ARCH, Section II, P5
+      paragraph
+  - id: ro-recirculation-line
+    label: RO recirculation line
+    type: pipe
+    parent: P5
+    role: recirculation-flow-path
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 42; BLOCK-DIAGRAM
+  - id: P6
+    label: P6 treated-water handling and UF backwash
+    type: treatment-stage
+    parent: swat-water-treatment-testbed
+    role: process-stage
+    assertion_status: source-documented
+    evidence: G17-PROC, Section 2.1; M16-ARCH, Section II, P5-P6 paragraphs and Figure
+      2
+  - id: P6-permeate-transfer
+    label: P6 permeate storage
+    distribution: null
+    and recycle: null
+    type: functional-system
+    parent: P6
+    role: permeate-handling-system
+    assertion_status: source-documented
+    evidence: G17-PROC, Section 2.1; G17-T2, Section 4.1 Table 2 row 49
+  - id: T501
+    label: RO permeate tank T501
+    type: tank
+    parent: P6-permeate-transfer
+    role: permeate-vessel
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, P5 paragraph and Figure 2; BLOCK-DIAGRAM
+  - id: P601
+    label: Permeate recycle/transfer pump P601
+    type: pump
+    parent: P6-permeate-transfer
+    role: permeate-recycle-pump
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 49
+    context:
+      implementation_status: installed
+      2015_collection_use: not-used
+      historian_status: tag-present
+  - id: water-distribution
+    label: Treated-water distribution outlet
+    type: sink
+    parent: P6-permeate-transfer
+    role: product-water-outlet
+    assertion_status: source-documented
+    evidence: G17-PROC, Section 2.1; BLOCK-DIAGRAM
+  - id: permeate-recycle-line
+    label: Permeate recycle line to T101
+    type: pipe
+    parent: P6-permeate-transfer
+    role: recycle-flow-path
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 49; BLOCK-DIAGRAM
+    context:
+      2015_collection_use: not-used
+  - id: P6-uf-backwash
+    label: P6 UF-backwash subsystem
+    type: functional-system
+    parent: P6
+    role: backwash-system
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, P6 paragraph and Figure 2; G17-PROC, Section 2.1
+  - id: T502
+    label: UF-backwash water tank T502
+    type: tank
+    parent: P6-uf-backwash
+    role: backwash-vessel
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, P5-P6 paragraphs and Figure 2; BLOCK-DIAGRAM
+  - id: P602
+    label: UF-backwash pump P602
+    type: pump
+    parent: P6-uf-backwash
+    role: backwash-pump
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 50
+  - id: uf-backwash-line
+    label: UF-backwash supply line
+    type: pipe
+    parent: P6-uf-backwash
+    role: backwash-flow-path
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 rows 48 and 50; M16-ARCH, Section II, P6
+      paragraph
+  - id: P603
+    label: Unimplemented P603 historian actuator tag
+    type: plant-component
+    parent: P6
+    role: unimplemented-actuator-tag
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 51
+    context:
+      implementation_status: not-implemented
+      physical_edges: none
+      historian_status: tag-present
+  - id: P6-clean-in-place
+    label: P6 clean-in-place subsystem
+    type: functional-system
+    parent: P6
+    role: cleaning-system
+    assertion_status: diagram-documented
+    evidence: BLOCK-DIAGRAM labels CIP tank and CIP pump; implementation in the 2015
+      A1/A2 configuration is not established by M16/G17/W18
+    context:
+      configuration_status: excluded-from-physical-a1a2-2015
+  - id: cip-tank
+    label: Clean-in-place tank
+    type: tank
+    parent: P6-clean-in-place
+    role: cleaning-vessel
+    assertion_status: diagram-documented
+    evidence: BLOCK-DIAGRAM
+    context:
+      configuration_status: excluded-from-physical-a1a2-2015
+  - id: cip-pump
+    label: Clean-in-place pump
+    type: pump
+    parent: P6-clean-in-place
+    role: cleaning-pump
+    assertion_status: diagram-documented
+    evidence: BLOCK-DIAGRAM
+    context:
+      configuration_status: excluded-from-physical-a1a2-2015
+  configurations:
+  - id: physical-a1a2-2015
+    review_status: approved
+    active_components:
+    - P1
+    - raw-water-inlet
+    - MV101
+    - T101
+    - P1-transfer-pumps
+    - P101
+    - P102
+    - P2
+    - P2-dosing-line
+    - NaCl-source
+    - sodium-chloride-dosing
+    - P201
+    - P202
+    - HCl-source
+    - hydrochloric-acid-dosing
+    - P203
+    - P204
+    - NaOCl-source
+    - sodium-hypochlorite-dosing
+    - P205
+    - P206
+    - static-mixer
+    - MV201
+    - P3
+    - T301
+    - P3-feed-pumps
+    - P301
+    - P302
+    - UF-unit
+    - MV301
+    - MV302
+    - MV303
+    - MV304
+    - uf-backwash-drain
+    - uf-drain
+    - P4
+    - T401
+    - P4-feed-pumps
+    - P401
+    - P402
+    - UV401
+    - P4-dechlorination-line
+    - NaHSO3-source
+    - bisulfite-dosing
+    - P403
+    - P404
+    - P5
+    - cartridge-filter
+    - P5-boost-pumps
+    - P501
+    - P502
+    - ro-feed-line
+    - RO-unit
+    - ro-permeate-line
+    - ro-reject-line
+    - ro-recirculation-line
+    - P6
+    - P6-permeate-transfer
+    - T501
+    - P601
+    - water-distribution
+    - permeate-recycle-line
+    - P6-uf-backwash
+    - T502
+    - P602
+    - uf-backwash-line
+    - P603
+    sensor_owners:
+      raw-water-inlet:
+      - FIT101
+      T101:
+      - LIT101
+      P2-dosing-line:
+      - AIT201
+      - AIT202
+      - AIT203
+      - FIT201
+      T301:
+      - LIT301
+      UF-unit:
+      - DPIT301
+      - FIT301
+      T401:
+      - LIT401
+      P4-dechlorination-line:
+      - AIT401
+      - AIT402
+      - FIT401
+      ro-feed-line:
+      - AIT501
+      - AIT502
+      - AIT503
+      - FIT501
+      - PIT501
+      ro-permeate-line:
+      - AIT504
+      - FIT502
+      - PIT502
+      ro-reject-line:
+      - FIT503
+      - PIT503
+      ro-recirculation-line:
+      - FIT504
+      uf-backwash-line:
+      - FIT601
+    actuator_owners:
+      MV101:
+      - MV101
+      P101:
+      - P101
+      P102:
+      - P102
+      MV201:
+      - MV201
+      P201:
+      - P201
+      P202:
+      - P202
+      P203:
+      - P203
+      P204:
+      - P204
+      P205:
+      - P205
+      P206:
+      - P206
+      MV301:
+      - MV301
+      MV302:
+      - MV302
+      MV303:
+      - MV303
+      MV304:
+      - MV304
+      P301:
+      - P301
+      P302:
+      - P302
+      P401:
+      - P401
+      P402:
+      - P402
+      P403:
+      - P403
+      P404:
+      - P404
+      UV401:
+      - UV401
+      P501:
+      - P501
+      P502:
+      - P502
+      P601:
+      - P601
+      P602:
+      - P602
+      P603:
+      - P603
+    event_assets:
+    - AIT202
+    - P1
+    - P2
+    - P3
+    - P4
+    - P5
+    - P6
+    - AIT402
+    - AIT502
+    - AIT504
+    - DPIT301
+    - FIT401
+    - FIT502
+    - LIT101
+    - LIT301
+    - LIT401
+    - MV101
+    - MV201
+    - MV302
+    - MV303
+    - MV304
+    - P101
+    - P102
+    - P201
+    - P203
+    - P205
+    - P302
+    - P401
+    - P501
+    - P602
+    - UV401
+  system_connections:
+  - source: raw-water-inlet
+    target: MV101
+    kind: material-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 rows 1 and 3; BLOCK-DIAGRAM
+  - source: MV101
+    target: T101
+    kind: material-flow
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, P1 paragraph and Figure 2; BLOCK-DIAGRAM
+  - source: T101
+    target: P101
+    kind: material-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 4
+  - source: T101
+    target: P102
+    kind: material-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 5
+  - source: P101
+    target: P2-dosing-line
+    kind: material-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 4; M16-ARCH, Section II, P2 paragraph
+  - source: P102
+    target: P2-dosing-line
+    kind: material-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 5; M16-ARCH, Section II, P2 paragraph
+  - source: NaCl-source
+    target: P201
+    kind: chemical-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 11; M16-ARCH, Section II, Figure 2
+  - source: NaCl-source
+    target: P202
+    kind: chemical-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 12; M16-ARCH, Section II, Figure 2
+  - source: P201
+    target: P2-dosing-line
+    kind: chemical-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 11
+  - source: P202
+    target: P2-dosing-line
+    kind: chemical-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 12
+  - source: HCl-source
+    target: P203
+    kind: chemical-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 13; M16-ARCH, Section II, Figure 2
+  - source: HCl-source
+    target: P204
+    kind: chemical-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 14; M16-ARCH, Section II, Figure 2
+  - source: P203
+    target: P2-dosing-line
+    kind: chemical-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 13
+  - source: P204
+    target: P2-dosing-line
+    kind: chemical-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 14
+  - source: NaOCl-source
+    target: P205
+    kind: chemical-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 15; M16-ARCH, Section II, Figure 2
+  - source: NaOCl-source
+    target: P206
+    kind: chemical-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 16; M16-ARCH, Section II, Figure 2
+  - source: P205
+    target: P2-dosing-line
+    kind: chemical-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 15
+  - source: P206
+    target: P2-dosing-line
+    kind: chemical-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 16
+  - source: P2-dosing-line
+    target: static-mixer
+    kind: material-flow
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, P2 paragraph and Figure 2; BLOCK-DIAGRAM
+  - source: static-mixer
+    target: MV201
+    kind: material-flow
+    assertion_status: inferred
+    evidence: G17-T2, Section 4.1 Table 2 row 10 establishes MV201 duty; exact position
+      is inferred from M16-ARCH Figure 2
+  - source: MV201
+    target: T301
+    kind: material-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 10
+  - source: T301
+    target: P301
+    kind: material-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 24
+  - source: T301
+    target: P302
+    kind: material-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 25
+  - source: P301
+    target: UF-unit
+    kind: material-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 24; M16-ARCH, Section II, P3 paragraph
+  - source: P302
+    target: UF-unit
+    kind: material-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 25; M16-ARCH, Section II, P3 paragraph
+  - source: UF-unit
+    target: MV302
+    kind: material-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 21
+  - source: MV302
+    target: T401
+    kind: material-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 21; M16-ARCH, Section II, P3-P4 paragraphs
+  - source: UF-unit
+    target: MV303
+    kind: backwash-drain-flow
+    assertion_status: inferred
+    evidence: G17-T2, Section 4.1 Table 2 row 22 establishes the backwash-drain duty;
+      exact valve placement is inferred
+  - source: MV303
+    target: uf-backwash-drain
+    kind: backwash-drain-flow
+    assertion_status: inferred
+    evidence: G17-T2, Section 4.1 Table 2 row 22; endpoint name is modeled
+  - source: UF-unit
+    target: MV304
+    kind: drain-flow
+    assertion_status: inferred
+    evidence: G17-T2, Section 4.1 Table 2 row 23 establishes the UF-drain duty; exact
+      valve placement is inferred
+  - source: MV304
+    target: uf-drain
+    kind: drain-flow
+    assertion_status: inferred
+    evidence: G17-T2, Section 4.1 Table 2 row 23; endpoint name is modeled
+  - source: T401
+    target: P401
+    kind: material-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 30
+  - source: T401
+    target: P402
+    kind: material-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 31
+  - source: P401
+    target: UV401
+    kind: material-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 30; M16-ARCH, Section II, P4 paragraph
+  - source: P402
+    target: UV401
+    kind: material-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 31; M16-ARCH, Section II, P4 paragraph
+  - source: NaHSO3-source
+    target: P403
+    kind: chemical-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 32; M16-ARCH, Section II, P4 paragraph
+  - source: NaHSO3-source
+    target: P404
+    kind: chemical-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 33; M16-ARCH, Section II, P4 paragraph
+  - source: P403
+    target: P4-dechlorination-line
+    kind: chemical-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 32; BLOCK-DIAGRAM
+  - source: P404
+    target: P4-dechlorination-line
+    kind: chemical-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 33; BLOCK-DIAGRAM
+  - source: UV401
+    target: P4-dechlorination-line
+    kind: material-flow
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, P4 paragraph and Figure 2; BLOCK-DIAGRAM
+  - source: P4-dechlorination-line
+    target: cartridge-filter
+    kind: material-flow
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, P4-P5 paragraphs and Figure 2; BLOCK-DIAGRAM
+  - source: cartridge-filter
+    target: P501
+    kind: material-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 43; BLOCK-DIAGRAM
+  - source: cartridge-filter
+    target: P502
+    kind: material-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 44; BLOCK-DIAGRAM
+  - source: P501
+    target: ro-feed-line
+    kind: material-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 43
+  - source: P502
+    target: ro-feed-line
+    kind: material-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 44
+  - source: ro-feed-line
+    target: RO-unit
+    kind: material-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 rows 39 and 45; M16-ARCH, Section II, P5
+      paragraph
+  - source: RO-unit
+    target: ro-permeate-line
+    kind: permeate-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 rows 38, 40 and 46; M16-ARCH, Section II,
+      P5 paragraph
+  - source: RO-unit
+    target: ro-reject-line
+    kind: reject-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 rows 41 and 47; M16-ARCH, Section II, P5
+      paragraph
+  - source: RO-unit
+    target: ro-recirculation-line
+    kind: recirculation-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 42; BLOCK-DIAGRAM
+  - source: ro-recirculation-line
+    target: RO-unit
+    kind: recirculation-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 42; BLOCK-DIAGRAM
+  - source: ro-permeate-line
+    target: T501
+    kind: permeate-flow
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, P5 paragraph and Figure 2; BLOCK-DIAGRAM
+  - source: ro-reject-line
+    target: T502
+    kind: reject-flow
+    assertion_status: source-documented
+    evidence: M16-ARCH, Section II, P5 paragraph and Figure 2; BLOCK-DIAGRAM
+  - source: T501
+    target: P601
+    kind: permeate-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 49
+    context:
+      2015_collection_use: not-used
+  - source: P601
+    target: water-distribution
+    kind: permeate-flow
+    assertion_status: source-documented
+    evidence: G17-PROC, Section 2.1; BLOCK-DIAGRAM
+    context:
+      2015_collection_use: not-used
+  - source: P601
+    target: permeate-recycle-line
+    kind: recycle-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 49; BLOCK-DIAGRAM
+    context:
+      2015_collection_use: not-used
+  - source: permeate-recycle-line
+    target: T101
+    kind: recycle-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 49; BLOCK-DIAGRAM
+    context:
+      2015_collection_use: not-used
+  - source: T502
+    target: P602
+    kind: backwash-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 50; BLOCK-DIAGRAM
+  - source: P602
+    target: uf-backwash-line
+    kind: backwash-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 rows 48 and 50
+  - source: uf-backwash-line
+    target: UF-unit
+    kind: backwash-flow
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 rows 48 and 50; M16-ARCH, Section II, P6
+      paragraph
+  - source: cip-tank
+    target: cip-pump
+    kind: cleaning-flow
+    assertion_status: diagram-documented
+    evidence: BLOCK-DIAGRAM
+  control_loops:
+  - id: MV101-controlled-by-LIT101
+    actuator: MV101
+    controlled_sensors:
+    - LIT101
+    control_type: level-based inlet control
+    assertion_status: source-documented
+    evidence: W18-T1, Background paragraph following Table 1
+  - id: P101-controlled-by-LIT301
+    actuator: P101
+    controlled_sensors:
+    - LIT301
+    control_type: downstream-level interlock
+    assertion_status: source-documented
+    evidence: W18-T1, Background paragraph following Table 1
+  - id: P201-controlled-by-FIT201
+    actuator: P201
+    controlled_sensors:
+    - FIT201
+    control_type: flow-paced dosing
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 9
+  - id: P202-controlled-by-FIT201
+    actuator: P202
+    controlled_sensors:
+    - FIT201
+    control_type: flow-paced dosing
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 rows 9 and 12
+  - id: P203-controlled-by-FIT201
+    actuator: P203
+    controlled_sensors:
+    - FIT201
+    control_type: flow-paced dosing
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 rows 9 and 13
+  - id: P204-controlled-by-FIT201
+    actuator: P204
+    controlled_sensors:
+    - FIT201
+    control_type: flow-paced dosing
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 rows 9 and 14
+  - id: P205-controlled-by-FIT201
+    actuator: P205
+    controlled_sensors:
+    - FIT201
+    control_type: flow-paced dosing
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 rows 9 and 15
+  - id: P206-controlled-by-FIT201
+    actuator: P206
+    controlled_sensors:
+    - FIT201
+    control_type: flow-paced dosing
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 rows 9 and 16
+  - id: P6-backwash-triggered-by-DPIT301
+    actuator: P6-uf-backwash
+    controlled_sensors:
+    - DPIT301
+    control_type: differential-pressure-triggered backwash
+    assertion_status: source-documented
+    evidence: M16-EXP, Section III-F, DPIT301 experiment; M16-ARCH, Section II, P6
+      paragraph
+  - id: UV401-controlled-by-FIT401
+    actuator: UV401
+    controlled_sensors:
+    - FIT401
+    control_type: flow-dependent UV operation
+    assertion_status: source-documented
+    evidence: G17-T2, Section 4.1 Table 2 row 28
+  - id: P401-controlled-by-LIT401
+    actuator: P401
+    controlled_sensors:
+    - LIT401
+    control_type: tank-level feed-pump interlock
+    assertion_status: source-documented
+    evidence: M16-EXP, Section III-F, LIT401 experiment; G17-T2, Section 4.1 Table
+      2 row 30
+  - id: P402-controlled-by-LIT401
+    actuator: P402
+    controlled_sensors:
+    - LIT401
+    control_type: tank-level feed-pump interlock
+    assertion_status: source-documented
+    evidence: M16-EXP, Section III-F, LIT401 experiment; G17-T2, Section 4.1 Table
+      2 row 31

@@ -1,0 +1,208 @@
+{
+  "pooled": {
+    "center": [
+      -0.0001303255558013916,
+      0.0006478814757429063,
+      -0.0006482452154159546,
+      0.0015762322582304478,
+      -0.0005047321319580078,
+      -0.0012266933917999268,
+      -4.0096230804920197e-05,
+      -0.0014212653040885925,
+      0.00158005952835083,
+      -0.003048807382583618,
+      0.00010395050048828125,
+      0.0035305917263031006,
+      0.002078920602798462
+    ],
+    "scale": [
+      0.005763123040426061,
+      0.005390111314205311,
+      0.0027558701759656415,
+      0.006027728578866937,
+      0.004826096874856958,
+      0.004314564687784154,
+      0.004256456171146669,
+      0.0057322345041504715,
+      0.0038079641653538487,
+      0.012103680021470579,
+      0.005798916453673495,
+      0.005617854287901891,
+      0.007548543382018559
+    ],
+    "n_reference": 65
+  },
+  "groups": {
+    "steady": {
+      "n_reference": 3,
+      "weight": 0.2727272727272727,
+      "center": [
+        0.00012611800974065608,
+        0.001536429902030663,
+        -0.000292238864031705,
+        0.000529215078462254,
+        -0.001805855469270186,
+        -0.0021885172887281938,
+        0.001387298445809971,
+        -0.0018136988986622202,
+        0.0033391822468150745,
+        -0.0018393180587074976,
+        0.0008715174414894797,
+        0.0031775561246004972,
+        0.001472139900380915
+      ],
+      "scale": [
+        0.005168980809608949,
+        0.005791662066246593,
+        0.002524961319756737,
+        0.005716770629926516,
+        0.004519315903460282,
+        0.004162496533267057,
+        0.004972385885208875,
+        0.0051433762261371245,
+        0.00349908770864069,
+        0.011343530479696683,
+        0.005237464215067513,
+        0.005127472020542455,
+        0.00780950284100414
+      ]
+    },
+    "transition_settling": {
+      "n_reference": 62,
+      "weight": 0.8857142857142857,
+      "center": [
+        -0.00016214304736682347,
+        0.000566988465808598,
+        -0.0007008663245609829,
+        0.001703781035861799,
+        -0.0003151535987854004,
+        -0.001099080273083278,
+        -0.00011404805949756076,
+        -0.001323529545749937,
+        0.0014874611582074847,
+        -0.0032928151743752618,
+        -6.915671484810965e-05,
+        0.003614136150905064,
+        0.0021417966910770962
+      ],
+      "scale": [
+        0.005847766528041915,
+        0.005282677211483848,
+        0.0027826579112700785,
+        0.006056416785570358,
+        0.004740425248797521,
+        0.004263419872627127,
+        0.003995188128664384,
+        0.005808004348175836,
+        0.003617625899721175,
+        0.012149003877347068,
+        0.005841015580913948,
+        0.0056788227195961345,
+        0.0075050664884185846
+      ]
+    }
+  },
+  "calibration": {
+    "pooled": {
+      "limit": 24.73252546212866,
+      "n_calibration": 20
+    },
+    "groups": {
+      "steady": {
+        "n_calibration": 0,
+        "limit": null,
+        "uses_class_limit": false
+      },
+      "transition_settling": {
+        "n_calibration": 20,
+        "limit": 24.73252546212866,
+        "uses_class_limit": true
+      }
+    }
+  },
+  "calibration_scores": [
+    5.99617558583991,
+    15.609337350486927,
+    24.73252546212866,
+    10.254042372799164,
+    3.058720048084822,
+    12.377332518829295,
+    3.068171441228858,
+    16.724596115722715,
+    4.107331255686536,
+    18.411201834942982,
+    8.209210220930444,
+    4.420406384212964,
+    19.40358549377294,
+    9.456248359043224,
+    5.935695044395427,
+    20.706579848015014,
+    7.940485110168351,
+    5.257127502477393,
+    15.90519376853061,
+    17.51821627431915
+  ],
+  "calibration_classes": [
+    "transition_settling",
+    "transition_settling",
+    "transition_settling",
+    "transition_settling",
+    "transition_settling",
+    "transition_settling",
+    "transition_settling",
+    "transition_settling",
+    "transition_settling",
+    "transition_settling",
+    "transition_settling",
+    "transition_settling",
+    "transition_settling",
+    "transition_settling",
+    "transition_settling",
+    "transition_settling",
+    "transition_settling",
+    "transition_settling",
+    "transition_settling",
+    "transition_settling"
+  ],
+  "slot": "four_tank-seed23",
+  "unit": "four_tank",
+  "seed": 23,
+  "protocol_sha256": "3ca42df4dba653e3f4bce129a7b3e38ee7717fdd52cc0db644e83b1387661105",
+  "normal_manifest_sha256": "913cd774d6faee40d9fd4ad1dcd794bdf1a1610b185fb1a8c669560855eb9d1f",
+  "model_state_before": "4a32c012e48e44a8f1abf4b6d597b6ad963e2179229c8a82844aa43c1e9b4ede",
+  "model_state_after": "4a32c012e48e44a8f1abf4b6d597b6ad963e2179229c8a82844aa43c1e9b4ede",
+  "checkpoint_sha256": "e26e6d496b26fdb453da92dc61a27a0862747b51fe20f5b7735c94e7821e9bb2",
+  "scaler_sha256": "b15066dbfca67629461021d7d42411df02861153e8feb773704b5481bcebb689",
+  "feature_sha256": "f5fcd20d31dd83e88227a3c31db1cf4b479bd63aee7a8c4cf39fa78150cee88e",
+  "restored_root": "REDACTED_external-path_947ca8ce0c60",
+  "normal_arrays": {
+    "path": "REDACTED_external-path_61403c46f981",
+    "sha256": "1b42c1d82e12909c4fa191b4013730d4e0139917ef9340cc0d0ce10746347f42",
+    "bytes": 1130009
+  },
+  "normal_context_n": 85,
+  "reference_n": 65,
+  "calibration_n": 20,
+  "cached_residuals_reused": 13,
+  "new_normal_forward_contexts": 72,
+  "cached_reproduction_max_abs_error": 0.0,
+  "cached_reproduction_rtol": 2e-05,
+  "cached_reproduction_atol": 2e-06,
+  "numeric_dtype": "Original scaler and AE float32 inference; signed residuals retained float64 as in frozen signed_batch",
+  "scoring_windows": [
+    200,
+    210,
+    220,
+    230,
+    240
+  ],
+  "TTO_launched": false,
+  "model_file_hashes_before": {
+    "models/full/checkpoint-best.pt": "e26e6d496b26fdb453da92dc61a27a0862747b51fe20f5b7735c94e7821e9bb2",
+    "scaler.npz": "b15066dbfca67629461021d7d42411df02861153e8feb773704b5481bcebb689",
+    "features.json": "f5fcd20d31dd83e88227a3c31db1cf4b479bd63aee7a8c4cf39fa78150cee88e",
+    "model_bundle.json": "7696e43abe278db01b53bc60f7cffbc0309a842af106ee2da9a41c8b477a91ff",
+    "threshold.json": "de9ef6cadd938dad357923903a5557ae17a0ec324fbdcdbbac13d2a68eb52a17"
+  },
+  "completed_utc": "2026-10-20T14:28:49.667878+00:00"
+}

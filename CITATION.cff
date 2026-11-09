@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying paper when using these resources."
+type: software
+title: "Context-Aware Supervision for Selective Sensor Reconstruction"
+authors:
+  - family-names: Ludwig
+    given-names: Björn
+    affiliation: "Helmut-Schmidt University, Institute for Artificial Intelligence"
+  - family-names: Niggemann
+    given-names: Oliver
+    affiliation: "Helmut-Schmidt University, Institute for Artificial Intelligence"
+repository-code: "https://github.com/B-Ludwig/Context-Aware_Supervision_for_Selective_Sensor_Reconstruction"

@@ -1,0 +1,4 @@
+method,N,D,P,L,B,H,Q_proposal,benefit_available_N,coverage_pct,proposal_pct,strict_harm_per_all_pct,strict_harm_per_quality_proposal_pct,target_precision_pct,signed_benefit_sum_range,signed_benefit_mean_range,G_pct_range,positive_benefit_sum_range,negative_benefit_sum_range,worst_benefit_range
+Context,96,13,2,0,0,2,2,96,0,2.0833333333333335,2.0833333333333335,100,0,-1.4192869352768787,-0.014784238909134153,-1.4784238909134153,0,-1.4192869352768787,-0.81417641314479794
+Dominance,96,6,0,0,0,0,0,96,0,0,0,,,0,0,0,0,0,0
+Reference,96,10,1,0,0,1,1,96,0,1.0416666666666667,1.0416666666666667,100,0,-0.81417641314479794,-0.0084810043035916452,-0.84810043035916449,0,-0.81417641314479794,-0.81417641314479794

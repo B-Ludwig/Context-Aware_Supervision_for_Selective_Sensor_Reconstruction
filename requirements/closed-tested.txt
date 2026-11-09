@@ -1,0 +1,6 @@
+# Report-only CPU environment actually checked 28 October2026, Python3.10.13.
+# No Torch/GPU/model weights or raw recordings needed for declared closed commands.
+numpy==1.26.4
+pandas==2.2.3
+pyarrow==15.0.1
+matplotlib==3.8.3

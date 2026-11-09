@@ -1,0 +1,11 @@
+{
+  "case_id": "26eefd15ed54d0b6cffb",
+  "slot": "four_tank-seed23",
+  "family": "native_process",
+  "true_target_index": null,
+  "quality_available": false,
+  "selection_used_outcomes": false,
+  "illustrative_only": true,
+  "quality_scope": "selected channel only",
+  "quality_unavailable_reason": "Native fault/attack has no clean counterfactual; no native damage inference"
+}

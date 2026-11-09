@@ -1,0 +1,1412 @@
+{
+  "hai_ds1": [
+    {
+      "name": "mixer0.sensor_continuous_pressure_tank_B201.p",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_pressure_tank_B202.p",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_pressure_tank_B203.p",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_pressure_tank_B204.p",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_volumeFlowRate.V_flow",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_volumeFlowRate.port_a.m_flow",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_volumeFlowRate.port_b.m_flow",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.tank_B201.level",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.tank_B202.level",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.tank_B203.level",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.tank_B204.level",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    }
+  ],
+  "hai_ds2": [
+    {
+      "name": "distill0.cooler_B102.port.T",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.cooler_B103.port.T",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.distill.level",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.heater_distill.port.T",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_pressure_distill_out0.p",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_pressure_distill_out1.p",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_pressure_pump_P101.p",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_pressure_tank_B101.p",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_pressure_tank_B102.p",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_pressure_tank_B103.p",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_volumeFlowRate.V_flow",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_volumeFlowRate.port_a.m_flow",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_volumeFlowRate.port_b.m_flow",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.tank_B101.level",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.tank_B102.level",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.tank_B103.level",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    }
+  ],
+  "hai_ds3": [
+    {
+      "name": "filter0.sensor_continuous_pressure_pump_P101.p",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.sensor_continuous_pressure_tank_B101.p",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.sensor_continuous_pressure_tank_B102.p",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.sensor_continuous_volumeFlowRate.V_flow",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.sensor_continuous_volumeFlowRate.port_a.m_flow",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.sensor_continuous_volumeFlowRate.port_b.m_flow",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.tank_B101.level",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.tank_B102.level",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    }
+  ],
+  "hai_ds4": [
+    {
+      "name": "bottling0.sensor_continuous_pressure_pump_P401.p",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_pressure_tank_B401.p",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_pressure_tank_B402.p",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_volumeFlowRate.V_flow",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_volumeFlowRate.port_a.m_flow",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_volumeFlowRate.port_b.m_flow",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.tank_B401.level",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.tank_B402.level",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    }
+  ],
+  "hai_ds5": [
+    {
+      "name": "bottling0.sensor_continuous_pressure_pump_P401.p",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_pressure_tank_B401.p",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_pressure_tank_B402.p",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_volumeFlowRate.V_flow",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_volumeFlowRate.port_a.m_flow",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_volumeFlowRate.port_b.m_flow",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.tank_B401.level",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.tank_B402.level",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_pressure_tank_B201.p",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_pressure_tank_B202.p",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_pressure_tank_B203.p",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_pressure_tank_B204.p",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_volumeFlowRate.V_flow",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_volumeFlowRate.port_a.m_flow",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_volumeFlowRate.port_b.m_flow",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.tank_B201.level",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.tank_B202.level",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.tank_B203.level",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.tank_B204.level",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    }
+  ],
+  "hai_ds6": [
+    {
+      "name": "bottling0.sensor_continuous_pressure_pump_P401.p",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_pressure_tank_B401.p",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_pressure_tank_B402.p",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_volumeFlowRate.V_flow",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_volumeFlowRate.port_a.m_flow",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_volumeFlowRate.port_b.m_flow",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.tank_B401.level",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.tank_B402.level",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling1.sensor_continuous_pressure_pump_P401.p",
+      "owner": "bottling1",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling1.sensor_continuous_pressure_tank_B401.p",
+      "owner": "bottling1",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling1.sensor_continuous_pressure_tank_B402.p",
+      "owner": "bottling1",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling1.sensor_continuous_volumeFlowRate.V_flow",
+      "owner": "bottling1",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling1.sensor_continuous_volumeFlowRate.port_a.m_flow",
+      "owner": "bottling1",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling1.sensor_continuous_volumeFlowRate.port_b.m_flow",
+      "owner": "bottling1",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling1.tank_B401.level",
+      "owner": "bottling1",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling1.tank_B402.level",
+      "owner": "bottling1",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.cooler_B102.port.T",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.cooler_B103.port.T",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.distill.level",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.heater_distill.port.T",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_pressure_distill_out0.p",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_pressure_distill_out1.p",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_pressure_pump_P101.p",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_pressure_tank_B101.p",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_pressure_tank_B102.p",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_pressure_tank_B103.p",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_volumeFlowRate.V_flow",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_volumeFlowRate.port_a.m_flow",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_volumeFlowRate.port_b.m_flow",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.tank_B101.level",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.tank_B102.level",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.tank_B103.level",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    }
+  ],
+  "hai_ds7": [
+    {
+      "name": "bottling0.sensor_continuous_pressure_pump_P401.p",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_pressure_tank_B401.p",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_pressure_tank_B402.p",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_volumeFlowRate.V_flow",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_volumeFlowRate.port_a.m_flow",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_volumeFlowRate.port_b.m_flow",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.tank_B401.level",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.tank_B402.level",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.sensor_continuous_pressure_pump_P101.p",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.sensor_continuous_pressure_tank_B101.p",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.sensor_continuous_pressure_tank_B102.p",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.sensor_continuous_volumeFlowRate.V_flow",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.sensor_continuous_volumeFlowRate.port_a.m_flow",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.sensor_continuous_volumeFlowRate.port_b.m_flow",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.tank_B101.level",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.tank_B102.level",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    }
+  ],
+  "hai_ds8": [
+    {
+      "name": "bottling0.sensor_continuous_pressure_pump_P401.p",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_pressure_tank_B401.p",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_pressure_tank_B402.p",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_volumeFlowRate.V_flow",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_volumeFlowRate.port_a.m_flow",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_volumeFlowRate.port_b.m_flow",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.tank_B401.level",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.tank_B402.level",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.sensor_continuous_pressure_pump_P101.p",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.sensor_continuous_pressure_tank_B101.p",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.sensor_continuous_pressure_tank_B102.p",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.sensor_continuous_volumeFlowRate.V_flow",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.sensor_continuous_volumeFlowRate.port_a.m_flow",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.sensor_continuous_volumeFlowRate.port_b.m_flow",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.tank_B101.level",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.tank_B102.level",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_pressure_tank_B201.p",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_pressure_tank_B202.p",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_pressure_tank_B203.p",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_pressure_tank_B204.p",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_volumeFlowRate.V_flow",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_volumeFlowRate.port_a.m_flow",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_volumeFlowRate.port_b.m_flow",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.tank_B201.level",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.tank_B202.level",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.tank_B203.level",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.tank_B204.level",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    }
+  ],
+  "hai_ds9": [
+    {
+      "name": "distill0.cooler_B102.port.T",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.cooler_B103.port.T",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.distill.level",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.heater_distill.port.T",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_pressure_distill_out0.p",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_pressure_distill_out1.p",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_pressure_pump_P101.p",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_pressure_tank_B101.p",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_pressure_tank_B102.p",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_pressure_tank_B103.p",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_volumeFlowRate.V_flow",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_volumeFlowRate.port_a.m_flow",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_volumeFlowRate.port_b.m_flow",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.tank_B101.level",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.tank_B102.level",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.tank_B103.level",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.sensor_continuous_pressure_pump_P101.p",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.sensor_continuous_pressure_tank_B101.p",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.sensor_continuous_pressure_tank_B102.p",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.sensor_continuous_volumeFlowRate.V_flow",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.sensor_continuous_volumeFlowRate.port_a.m_flow",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.sensor_continuous_volumeFlowRate.port_b.m_flow",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.tank_B101.level",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "filter0.tank_B102.level",
+      "owner": "filter0",
+      "encoding": "identity",
+      "role": "sensor"
+    }
+  ],
+  "hai_ds10": [
+    {
+      "name": "bottling0.sensor_continuous_pressure_pump_P401.p",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_pressure_tank_B401.p",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_pressure_tank_B402.p",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_volumeFlowRate.V_flow",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_volumeFlowRate.port_a.m_flow",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.sensor_continuous_volumeFlowRate.port_b.m_flow",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.tank_B401.level",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "bottling0.tank_B402.level",
+      "owner": "bottling0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.cooler_B102.port.T",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.cooler_B103.port.T",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.distill.level",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.heater_distill.port.T",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_pressure_distill_out0.p",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_pressure_distill_out1.p",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_pressure_pump_P101.p",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_pressure_tank_B101.p",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_pressure_tank_B102.p",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_pressure_tank_B103.p",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_volumeFlowRate.V_flow",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_volumeFlowRate.port_a.m_flow",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.sensor_continuous_volumeFlowRate.port_b.m_flow",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.tank_B101.level",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.tank_B102.level",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "distill0.tank_B103.level",
+      "owner": "distill0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_pressure_tank_B201.p",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_pressure_tank_B202.p",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_pressure_tank_B203.p",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_pressure_tank_B204.p",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_volumeFlowRate.V_flow",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_volumeFlowRate.port_a.m_flow",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.sensor_continuous_volumeFlowRate.port_b.m_flow",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.tank_B201.level",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.tank_B202.level",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.tank_B203.level",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer0.tank_B204.level",
+      "owner": "mixer0",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer1.sensor_continuous_pressure_tank_B201.p",
+      "owner": "mixer1",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer1.sensor_continuous_pressure_tank_B202.p",
+      "owner": "mixer1",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer1.sensor_continuous_pressure_tank_B203.p",
+      "owner": "mixer1",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer1.sensor_continuous_pressure_tank_B204.p",
+      "owner": "mixer1",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer1.sensor_continuous_volumeFlowRate.V_flow",
+      "owner": "mixer1",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer1.sensor_continuous_volumeFlowRate.port_a.m_flow",
+      "owner": "mixer1",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer1.sensor_continuous_volumeFlowRate.port_b.m_flow",
+      "owner": "mixer1",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer1.tank_B201.level",
+      "owner": "mixer1",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer1.tank_B202.level",
+      "owner": "mixer1",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer1.tank_B203.level",
+      "owner": "mixer1",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "mixer1.tank_B204.level",
+      "owner": "mixer1",
+      "encoding": "identity",
+      "role": "sensor"
+    }
+  ],
+  "four_tank": [
+    {
+      "name": "FIC14002_PV_Out ValueY",
+      "owner": "YC14001",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "FIC21002_PV_Out ValueY",
+      "owner": "YC21001",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "FIC22002_PV_Out ValueY",
+      "owner": "YC22001",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "FIC23002_PV_Out ValueY",
+      "owner": "YC23001",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "LIC21002_PV_Out ValueY",
+      "owner": "VE2100",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "LIC22002_PV_Out ValueY",
+      "owner": "VE2200",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "LIC23002_PV_Out ValueY",
+      "owner": "VE2300",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "LevelMainTank ValueY",
+      "owner": "VE1000",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "PI10003_PV_Out ValueY",
+      "owner": "VE1000",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "PI12002_PV_Out ValueY",
+      "owner": "PL1200",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "PI12003_PV_Out ValueY",
+      "owner": "PL1200",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "PI14012_PV_Out ValueY",
+      "owner": "YC14006",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "PIC14007_PV_Out ValueY",
+      "owner": "bypass_return",
+      "encoding": "identity",
+      "role": "sensor"
+    }
+  ],
+  "swat": [
+    {
+      "name": "DPIT301",
+      "owner": "UF-unit",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "FIT101",
+      "owner": "raw-water-inlet",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "FIT201",
+      "owner": "P2-dosing-line",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "FIT301",
+      "owner": "UF-unit",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "FIT401",
+      "owner": "P4-dechlorination-line",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "FIT501",
+      "owner": "ro-feed-line",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "FIT502",
+      "owner": "ro-permeate-line",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "FIT601",
+      "owner": "uf-backwash-line",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "LIT101",
+      "owner": "T101",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "LIT301",
+      "owner": "T301",
+      "encoding": "identity",
+      "role": "sensor"
+    },
+    {
+      "name": "LIT401",
+      "owner": "T401",
+      "encoding": "identity",
+      "role": "sensor"
+    }
+  ]
+}

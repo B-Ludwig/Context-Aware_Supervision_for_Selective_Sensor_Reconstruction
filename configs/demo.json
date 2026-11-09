@@ -1,0 +1,59 @@
+{
+  "assessment_counts": {
+    "demo": 1
+  },
+  "calibration_counts": {
+    "demo": 3
+  },
+  "datasets": [
+    "demo"
+  ],
+  "development_seed": 23,
+  "history_ablation": true,
+  "preset": "demo",
+  "protocol": "safeprocess-fresh-v1",
+  "roles": {
+    "assessment": 1,
+    "decision_fit": 1,
+    "dictionary": 4,
+    "normal_calibration": 3,
+    "risk_calibration": 1,
+    "selection_normal_fit": 2
+  },
+  "schema_version": 1,
+  "seeds": [
+    23
+  ],
+  "temporal": true,
+  "temporal_seeds": [
+    23
+  ],
+  "training": {
+    "batch_size": 128,
+    "dropout": 0.1,
+    "grad_clip": 1.0,
+    "hidden_size": 8,
+    "input_proj_dim": 8,
+    "latent_cap": 2,
+    "latent_fraction": 0.5,
+    "lr": 0.001,
+    "max_epochs": 5,
+    "min_delta": 0.001,
+    "n_layers": 1,
+    "patience": 5,
+    "post_mlp_dropout": 0.0,
+    "post_mlp_ratio": 4,
+    "stride": 10,
+    "weight_decay": 0.0,
+    "window_length": 60
+  },
+  "tto": {
+    "init_window": 5,
+    "learning_rate": 0.01,
+    "max_consecutive_cycles": 20,
+    "max_cycles": 500,
+    "max_seconds": 10.0,
+    "patience": 10,
+    "smooth_lambda": 0.001
+  }
+}

@@ -1,0 +1,10 @@
+family,qualification_group,N,P,available_selected_quality_N,selected_improved_N,selected_harmed_N,selected_benefit_mean_pct_range,selected_benefit_sum_pct_range
+common_mode,not_native,120,55,55,54,1,8.5177886474159195,468.47837560787559
+context_control,not_native,180,0,0,0,0,,
+native_attack,locally_unverified,5,0,0,0,0,,
+native_attack,response_supported,5,2,0,0,0,,
+native_process,configured_no_observed_response,5,0,0,0,0,,
+native_process,locally_unverified,220,53,0,0,0,,
+native_process,response_supported,20,13,0,0,0,,
+unchanged,not_native,660,47,47,0,47,-17.37184028916581,-816.4764935907931
+witness_corruption,not_native,120,78,78,74,4,8.1475897360467116,635.5119994116435

@@ -1,0 +1,13 @@
+{
+  "case_id": "292fd580e6f4676f9bfd",
+  "slot": "four_tank-seed23",
+  "family": "drift",
+  "true_target_index": 6,
+  "quality_available": true,
+  "selection_used_outcomes": true,
+  "illustrative_only": true,
+  "quality_scope": "selected channel only",
+  "before_fraction": 0.009999999999999953,
+  "after_fraction": 0.0043004787037320275,
+  "benefit_fraction": 0.005699521296267926
+}

@@ -1,0 +1,317 @@
+version: 1
+evidence_sources:
+  G17-T2: Goh et al. (2017), A Dataset to Support Research in the Design of Secure
+    Water Treatment Systems, Section 4.1 and Table 2.
+  W18-T1: Wang et al. (2018), Verifying a Water Treatment System, Background and Table
+    1.
+  W18-RES: Wang et al. (2018), Verifying a Water Treatment System, case-study results.
+  M16-EXP: 'Mathur and Tippenhauer (2016), SWaT: A Water Treatment Testbed for Research
+    and Training on ICS Security, Section III.'
+  REL: 'Authored SWaT physical-data audit: Normal_v0/Normal_v1 aliasing and published
+    engineering-unit discrepancies retained as source notes.'
+  TAX: Authored tag taxonomy. Sensor/state separation is implemented in datasets/swat.py
+    and paper_channels.json.
+channels:
+  FIT101:
+    description: Inflow to the raw-water tank
+    evidence: G17-T2, Table 2 row 1
+    observable_property: flow-rate
+    raw_unit_uri: http://qudt.org/vocab/unit/M3-PER-HR
+    published_range: 2.5-2.6
+    published_range_unit_uri: http://qudt.org/vocab/unit/M3-PER-HR
+    published_range_evidence: W18-T1, Table 1
+  LIT101:
+    description: Raw-water tank level
+    evidence: G17-T2, Table 2 row 2; W18-T1, Table 1
+    observable_property: liquid-level
+    raw_unit_uri: http://qudt.org/vocab/unit/MilliM
+    published_range: 500-1100
+    published_range_unit_uri: http://qudt.org/vocab/unit/MilliM
+    published_range_evidence: W18-T1, Table 1
+  MV101:
+    description: Motorized valve controlling flow into the raw-water tank
+    evidence: G17-T2, Table 2 row 3
+  P101:
+    description: Duty pump from the raw-water tank to P2
+    evidence: G17-T2, Table 2 row 4
+  P102:
+    description: Backup pump from the raw-water tank to P2
+    evidence: G17-T2, Table 2 row 5
+  AIT201:
+    description: Conductivity analyzer measuring sodium-chloride level
+    evidence: G17-T2, Table 2 row 6
+    observable_property: conductivity
+    raw_unit_uri: http://qudt.org/vocab/unit/MicroS-PER-CentiM
+    published_range: 30-260
+    published_range_unit_uri: http://qudt.org/vocab/unit/MicroS-PER-CentiM
+    published_range_evidence: W18-T1, Table 1
+  AIT202:
+    description: pH analyzer associated with hydrochloric-acid level
+    evidence: G17-T2, Table 2 row 7
+    observable_property: pH
+    raw_unit_uri: http://qudt.org/vocab/unit/PH
+    published_range: 6-9
+    published_range_unit_uri: http://qudt.org/vocab/unit/PH
+    published_range_evidence: W18-T1, Table 1
+  AIT203:
+    description: ORP analyzer associated with sodium-hypochlorite level
+    evidence: G17-T2, Table 2 row 8
+    observable_property: oxidation-reduction-potential
+    raw_unit_uri: http://qudt.org/vocab/unit/MilliV
+    published_range: 200-500
+    published_range_unit_uri: http://qudt.org/vocab/unit/MilliV
+    published_range_evidence: W18-T1, Table 1
+  FIT201:
+    description: Flow transmitter used to control dosing pumps
+    evidence: G17-T2, Table 2 row 9
+    observable_property: flow-rate
+    raw_unit_uri: http://qudt.org/vocab/unit/M3-PER-HR
+    published_range: 2.4-2.5
+    published_range_unit_uri: http://qudt.org/vocab/unit/M3-PER-HR
+    published_range_evidence: W18-T1, Table 1
+  MV201:
+    description: Motorized valve controlling flow to the UF-feed tank
+    evidence: G17-T2, Table 2 row 10
+  P201:
+    description: Duty sodium-chloride dosing pump
+    evidence: G17-T2, Table 2 row 11
+  P202:
+    description: Backup sodium-chloride dosing pump
+    evidence: G17-T2, Table 2 row 12
+  P203:
+    description: Duty hydrochloric-acid dosing pump
+    evidence: G17-T2, Table 2 row 13
+  P204:
+    description: Backup hydrochloric-acid dosing pump
+    evidence: G17-T2, Table 2 row 14
+  P205:
+    description: Duty sodium-hypochlorite dosing pump
+    evidence: G17-T2, Table 2 row 15
+  P206:
+    description: Backup sodium-hypochlorite dosing pump
+    evidence: G17-T2, Table 2 row 16
+  DPIT301:
+    description: UF differential-pressure transmitter used to trigger backwash
+    evidence: G17-T2, Table 2 row 17; M16-EXP, Section III-F
+    observable_property: differential-pressure
+    raw_unit_uri: http://qudt.org/vocab/unit/KiloPA
+    published_range: 0.1-0.3
+    published_range_unit_uri: http://qudt.org/vocab/unit/BAR
+    published_range_evidence: W18-T1, Table 1
+    context:
+      raw_unit_note: A1/A2 historian values are kPa; M16-EXP reports 20 to 42 kPa
+        and a 40 kPa threshold
+      approximate_raw_range_kPa: 10-30
+  FIT301:
+    description: Flow through the UF stage
+    evidence: G17-T2, Table 2 row 18
+    observable_property: flow-rate
+    raw_unit_uri: http://qudt.org/vocab/unit/M3-PER-HR
+    published_range: 2.2-2.4
+    published_range_unit_uri: http://qudt.org/vocab/unit/M3-PER-HR
+    published_range_evidence: W18-T1, Table 1
+  LIT301:
+    description: UF-feed tank level
+    evidence: G17-T2, Table 2 row 19
+    observable_property: liquid-level
+    raw_unit_uri: http://qudt.org/vocab/unit/MilliM
+    published_range: 800-1000
+    published_range_unit_uri: http://qudt.org/vocab/unit/MilliM
+    published_range_evidence: W18-T1, Table 1
+  MV301:
+    description: Motorized valve controlling the UF-backwash process
+    evidence: G17-T2, Table 2 row 20
+  MV302:
+    description: Motorized valve controlling UF output toward dechlorination
+    evidence: G17-T2, Table 2 row 21
+  MV303:
+    description: UF-backwash drain valve
+    evidence: G17-T2, Table 2 row 22
+  MV304:
+    description: UF drain valve
+    evidence: G17-T2, Table 2 row 23
+  P301:
+    description: Backup UF-feed pump
+    evidence: G17-T2, Table 2 row 24
+  P302:
+    description: Duty UF-feed pump
+    evidence: G17-T2, Table 2 row 25
+  AIT401:
+    description: Analyzer for RO-feed-water hardness
+    evidence: G17-T2, Table 2 row 26; W18-T1, Table 1
+    observable_property: hardness
+    raw_unit_uri: http://qudt.org/vocab/unit/PPM
+    published_range: 5-30
+    published_range_unit_uri: http://qudt.org/vocab/unit/PPM
+    published_range_evidence: W18-T1, Table 1
+  AIT402:
+    description: P4 oxidation-reduction-potential analyzer
+    evidence: G17-T2, Table 2 row 27; W18-T1, Table 1
+    observable_property: oxidation-reduction-potential
+    raw_unit_uri: http://qudt.org/vocab/unit/MilliV
+    published_range: 150-300
+    published_range_unit_uri: http://qudt.org/vocab/unit/MilliV
+    published_range_evidence: W18-T1, Table 1
+    context:
+      source_caveat: G17 apparent P203/P205 cross-reference is not encoded without
+        corroboration
+  FIT401:
+    description: Flow transmitter controlling the UV dechlorinator
+    evidence: G17-T2, Table 2 row 28
+    observable_property: flow-rate
+    raw_unit_uri: http://qudt.org/vocab/unit/M3-PER-HR
+    published_range: 1.5-2.0
+    published_range_unit_uri: http://qudt.org/vocab/unit/M3-PER-HR
+    published_range_evidence: W18-T1, Table 1
+  LIT401:
+    description: RO-feed tank level transmitter
+    evidence: G17-T2, Table 2 row 29 description; W18-T1 corrects the semantic type
+    observable_property: liquid-level
+    raw_unit_uri: http://qudt.org/vocab/unit/MilliM
+    published_range: 800-1000
+    published_range_unit_uri: http://qudt.org/vocab/unit/MilliM
+    published_range_evidence: W18-T1, Table 1
+    context:
+      source_caveat: G17 Table 2 Type cell says actuator, but its description and
+        W18 establish a level sensor
+  P401:
+    description: Backup pump from the RO-feed tank toward UV
+    evidence: G17-T2, Table 2 row 30
+  P402:
+    description: Duty pump from the RO-feed tank toward UV
+    evidence: G17-T2, Table 2 row 31
+  P403:
+    description: Duty sodium-bisulfite dosing pump
+    evidence: G17-T2, Table 2 row 32; M16-ARCH, P4 paragraph
+  P404:
+    description: Backup sodium-bisulfite dosing pump
+    evidence: G17-T2, Table 2 row 33; M16-ARCH, P4 paragraph
+  UV401:
+    description: UV dechlorination unit removing residual chlorine
+    evidence: G17-T2, Table 2 row 34; M16-ARCH, P4 paragraph
+  AIT501:
+    description: RO-feed pH analyzer
+    evidence: G17-T2, Table 2 row 35
+    observable_property: pH
+    raw_unit_uri: http://qudt.org/vocab/unit/PH
+    published_range: 6-8
+    published_range_unit_uri: http://qudt.org/vocab/unit/PH
+    published_range_evidence: W18-T1, Table 1
+  AIT502:
+    description: RO-feed ORP analyzer
+    evidence: G17-T2, Table 2 row 36
+    observable_property: oxidation-reduction-potential
+    raw_unit_uri: http://qudt.org/vocab/unit/MilliV
+    published_range: 100-250
+    published_range_unit_uri: http://qudt.org/vocab/unit/MilliV
+    published_range_evidence: W18-T1, Table 1
+  AIT503:
+    description: RO-feed conductivity analyzer
+    evidence: G17-T2, Table 2 row 37
+    observable_property: conductivity
+    raw_unit_uri: http://qudt.org/vocab/unit/MicroS-PER-CentiM
+    published_range: 200-300
+    published_range_unit_uri: http://qudt.org/vocab/unit/MicroS-PER-CentiM
+    published_range_evidence: W18-T1, Table 1
+  AIT504:
+    description: RO-permeate conductivity analyzer
+    evidence: G17-T2, Table 2 row 38
+    observable_property: conductivity
+    raw_unit_uri: http://qudt.org/vocab/unit/MicroS-PER-CentiM
+    published_range: 5-10
+    published_range_unit_uri: http://qudt.org/vocab/unit/MicroS-PER-CentiM
+    published_range_evidence: W18-T1, Table 1
+  FIT501:
+    description: RO membrane inlet flow
+    evidence: G17-T2, Table 2 row 39
+    observable_property: flow-rate
+    raw_unit_uri: http://qudt.org/vocab/unit/M3-PER-HR
+    published_range: 1-2
+    published_range_unit_uri: http://qudt.org/vocab/unit/M3-PER-HR
+    published_range_evidence: W18-T1, Table 1
+  FIT502:
+    description: RO permeate flow
+    evidence: G17-T2, Table 2 row 40
+    observable_property: flow-rate
+    raw_unit_uri: http://qudt.org/vocab/unit/M3-PER-HR
+    published_range: 1.1-1.3
+    published_range_unit_uri: http://qudt.org/vocab/unit/M3-PER-HR
+    published_range_evidence: W18-T1, Table 1
+  FIT503:
+    description: RO reject flow
+    evidence: G17-T2, Table 2 row 41
+    observable_property: flow-rate
+    raw_unit_uri: http://qudt.org/vocab/unit/M3-PER-HR
+    published_range: 0.7-0.9
+    published_range_unit_uri: http://qudt.org/vocab/unit/M3-PER-HR
+    published_range_evidence: W18-T1, Table 1
+  FIT504:
+    description: RO recirculation flow
+    evidence: G17-T2, Table 2 row 42
+    observable_property: flow-rate
+    raw_unit_uri: http://qudt.org/vocab/unit/M3-PER-HR
+    published_range: 0.25-0.35
+    published_range_unit_uri: http://qudt.org/vocab/unit/M3-PER-HR
+    published_range_evidence: W18-T1, Table 1
+  P501:
+    description: Duty pump sending dechlorinated water to RO
+    evidence: G17-T2, Table 2 row 43
+  P502:
+    description: Backup pump sending dechlorinated water to RO
+    evidence: G17-T2, Table 2 row 44
+  PIT501:
+    description: RO feed pressure
+    evidence: G17-T2, Table 2 row 45
+    observable_property: pressure
+    raw_unit_uri: http://qudt.org/vocab/unit/KiloPA
+    published_range: 2-3
+    published_range_unit_uri: http://qudt.org/vocab/unit/BAR
+    published_range_evidence: W18-T1, Table 1
+    context:
+      raw_unit_note: A1/A2 historian values are kPa; published range is in bar
+      approximate_raw_range_kPa: 200-300
+  PIT502:
+    description: RO permeate pressure
+    evidence: G17-T2, Table 2 row 46
+    observable_property: pressure
+    raw_unit_uri: http://qudt.org/vocab/unit/KiloPA
+    published_range: 0-0.2
+    published_range_unit_uri: http://qudt.org/vocab/unit/BAR
+    published_range_evidence: W18-T1, Table 1
+    context:
+      raw_unit_note: A1/A2 historian values are kPa; published range is in bar
+      approximate_raw_range_kPa: 0-20
+  PIT503:
+    description: RO reject pressure
+    evidence: G17-T2, Table 2 row 47
+    observable_property: pressure
+    raw_unit_uri: http://qudt.org/vocab/unit/KiloPA
+    published_range: 1-2
+    published_range_unit_uri: http://qudt.org/vocab/unit/BAR
+    published_range_evidence: W18-T1, Table 1
+    context:
+      raw_unit_note: A1/A2 historian values are kPa; published range is in bar
+      approximate_raw_range_kPa: 100-200
+  FIT601:
+    description: UF-backwash flow
+    evidence: G17-T2, Table 2 row 48; TAX
+    observable_property: flow-rate
+    context:
+      unit_status: 'unresolved: G17 confirms a flow meter but gives no engineering
+        unit'
+      experiment_scope: W18 evaluated 24 P1-P5 sensors and omitted the P6 sensor
+  P601:
+    description: Permeate recycle pump from the RO permeate tank toward the raw-water
+      tank; unused for 2015 collection
+    evidence: G17-T2, Table 2 row 49
+    context:
+      2015_collection_use: not-used
+  P602:
+    description: UF-backwash pump from the backwash tank to the UF membrane
+    evidence: G17-T2, Table 2 row 50
+  P603:
+    description: Declared tag for an actuator not implemented in SWaT
+    evidence: G17-T2, Table 2 row 51
+    context:
+      implementation_status: not-implemented
+      historian_status: tag-present

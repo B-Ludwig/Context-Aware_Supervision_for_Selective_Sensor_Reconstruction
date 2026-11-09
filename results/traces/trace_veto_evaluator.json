@@ -1,0 +1,13 @@
+{
+  "case_id": "08495ca05b7ff9f97e1a",
+  "slot": "four_tank-seed23",
+  "family": "noisy_stuck",
+  "true_target_index": 0,
+  "quality_available": true,
+  "selection_used_outcomes": false,
+  "illustrative_only": true,
+  "quality_scope": "selected channel only",
+  "before_fraction": 0.030281976530744253,
+  "after_fraction": 0.004594605993371383,
+  "benefit_fraction": 0.02568737053737287
+}
